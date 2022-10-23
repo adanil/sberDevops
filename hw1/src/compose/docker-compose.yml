@@ -1,0 +1,30 @@
+version: '3'
+services:
+    server:
+        build: ../
+        environment:
+          - DATABASEADDR=mongodb://admin:admin@mongo:27017
+        ports:
+          - 10003:10003
+        depends_on:
+          - mongo
+    mongo:
+      image: mongo:5.0
+      ports:
+        - 27017:27017
+      volumes:
+        - ../db:/db
+      environment:
+        - MONGO_INITDB_ROOT_USERNAME=admin
+        - MONGO_INITDB_ROOT_PASSWORD=admin
+    mongoexpress:
+      image: mongo-express
+      environment:
+        - ME_CONFIG_MONGODB_SERVER=mongo
+        - ME_CONFIG_MONGODB_PORT=27017
+        - ME_CONFIG_MONGODB_ADMINUSERNAME=admin
+        - ME_CONFIG_MONGODB_ADMINPASSWORD=admin
+      depends_on:
+        - mongo
+      ports:
+        - 8888:8081
