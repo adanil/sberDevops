@@ -6,11 +6,31 @@
 
   tasks:
 
-    - command: "ls server/"
+    
+    - name: Copy server folder
+      command: cp -r server/ data/
+
+    - command: "ls local_server/"
       register: dir_out
 
     - debug: var={{item}}
       with_items: dir_out.stdout_lines
+
+    - name: Create a volume
+      docker_volume:
+        name: volume_one
+
+    - name: Create a data container
+      docker_container:
+        name: helper
+        image: busybox
+        volumes:
+          - volume_one:/data
+
+    - name: Copy server folder to New volume
+      command: docker cp ./server/. helper:/data/
+      # command: docker rm helper
+
 
     - name: Run app
       docker_compose:
@@ -19,13 +39,19 @@
           version: "3.9"
           services:
             Runner:
-              image: golang:1.19-buster
-              command: bash -c "cd server 
-                    && ./goserver"
+              image: ubuntu:20.04
+              command: ./server_tmp/goserver
               ports:
                 - "10009:10009"
               volumes:
-                - ./server:/server
+                - volume_one:/server_tmp
+          volumes:
+            volume_one:
+              external: true
       register: output
-    # - ansible.builtin.debug:
-    #     var: output
+
+    - ansible.builtin.debug:
+        var: output
+
+    - name: Sleep
+      command: sleep 1d

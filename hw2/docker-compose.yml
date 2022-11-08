@@ -17,6 +17,11 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
       - ./app:/app
       - ./server:/app/server
+      - my-server-volume:/app/data
     command: ansible-playbook fabr_ansi.yml
     depends_on:
       - ansible_host
+
+volumes:
+    my-server-volume:
+        external: false
