@@ -1,0 +1,31 @@
+- hosts: 127.0.0.1
+  vars:
+    create_containers: 1
+    default_container_name: app 
+    default_container_image: golang:1.19-buster
+
+  tasks:
+
+    - command: "ls server/"
+      register: dir_out
+
+    - debug: var={{item}}
+      with_items: dir_out.stdout_lines
+
+    - name: Run app
+      docker_compose:
+        project_name: "App_container"
+        definition:
+          version: "3.9"
+          services:
+            Runner:
+              image: golang:1.19-buster
+              command: bash -c "cd server 
+                    && ./goserver"
+              ports:
+                - "10009:10009"
+              volumes:
+                - ./server:/server
+      register: output
+    # - ansible.builtin.debug:
+    #     var: output
