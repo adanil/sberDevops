@@ -1,0 +1,21 @@
+---
+
+- name: Host tasks
+  hosts: 127.0.0.1
+  vars:
+    home_dir: "~"
+
+  tasks:
+    - name: Build app
+      command: "go build -o goserver"
+    # - name: Run app on host
+    #   command: "./goserver"
+
+
+# - name: Serv1
+#   hosts: serv1
+#   tasks:
+#     - copy:
+#         src: goserver
+#         dest: goserver   
+

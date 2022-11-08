@@ -1,0 +1,57 @@
+- hosts: 127.0.0.1
+  vars:
+    create_containers: 1
+    default_container_name: app 
+    default_container_image: golang:1.19-buster
+
+  tasks:
+
+    
+    # - name: Copy server folder
+    #   command: cp -r server/ data/
+
+    - command: "ls local_server/"
+      register: dir_out
+
+    - debug: var={{item}}
+      with_items: dir_out.stdout_lines
+
+    - name: Create a volume
+      docker_volume:
+        name: volume_one
+
+    - name: Create a container for cpy files to volume
+      docker_container:
+        name: helper
+        image: busybox
+        volumes:
+          - volume_one:/data
+
+    - name: Copy server folder to New volume
+      command: docker cp ./server/. helper:/data/
+      # command: docker rm helper
+
+
+    - name: Run app
+      docker_compose:
+        project_name: "App_container"
+        definition:
+          version: "3.9"
+          services:
+            Runner:
+              image: ubuntu:20.04
+              command: ./server_tmp/goserver
+              ports:
+                - "10009:10009"
+              volumes:
+                - volume_one:/server_tmp
+          volumes:
+            volume_one:
+              external: true
+      register: output
+
+    - ansible.builtin.debug:
+        var: output
+
+    - name: Sleep
+      command: sleep 1d
