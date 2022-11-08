@@ -7,8 +7,8 @@
   tasks:
 
     
-    - name: Copy server folder
-      command: cp -r server/ data/
+    # - name: Copy server folder
+    #   command: cp -r server/ data/
 
     - command: "ls local_server/"
       register: dir_out
@@ -20,7 +20,7 @@
       docker_volume:
         name: volume_one
 
-    - name: Create a data container
+    - name: Create a container for cpy files to volume
       docker_container:
         name: helper
         image: busybox
