@@ -1,0 +1,26 @@
+{
+	"info": {
+		"_postman_id": "d9f31b37-40ea-4c0f-bee7-a49e8c6b6ee9",
+		"name": "hw3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24422985"
+	},
+	"item": [
+		{
+			"name": "Test",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Test message",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
