@@ -1,0 +1,19 @@
+commit 71916ef4ebe0de6d549ce5184b40c8404dc22a4b
+tree 64b689aba0a6af0da5ba4137a0437c537a6ec4e5
+parent e234aef4419f99b01d8339a94110c9de2044202e
+author Daniil Avtushko <adanilcoder@gmail.com> 2022-11-15 23:00:06 +0300
+committer Daniil Avtushko <adanilcoder@gmail.com> 2022-11-15 23:00:06 +0300
+
+    changes
+
+
+:100644 100644 811cb18120ff96206acce78d023f60186c3f5791 2fc1b0e320dbc543a617e15a65ca5a0b4053e23f M	main.go
+commit e234aef4419f99b01d8339a94110c9de2044202e
+tree 9e8b25937bcf3509629a45c342c26a28016dd14f
+parent 0ff506c09dd67d9388160c7da6f2ff47f8a375ca
+author Daniil Avtushko <31052524+adanil@users.noreply.github.com> 2022-11-15 22:48:30 +0300
+committer GitHub <noreply@github.com> 2022-11-15 22:48:30 +0300
+
+    Update main.go
+
+:100644 100644 da522162e297dd64398cd12024b013ca384c7d54 811cb18120ff96206acce78d023f60186c3f5791 M	main.go

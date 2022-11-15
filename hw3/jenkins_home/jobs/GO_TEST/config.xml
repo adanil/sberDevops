@@ -8,16 +8,29 @@
       <parameters/>
       <options/>
     </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
+    <org.jenkinsci.plugins.workflow.multibranch.JobPropertyTrackerAction plugin="workflow-multibranch@716.vc692a_e52371b_">
+      <jobPropertyDescriptors>
+        <string>org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty</string>
+      </jobPropertyDescriptors>
+    </org.jenkinsci.plugins.workflow.multibranch.JobPropertyTrackerAction>
   </actions>
   <description></description>
   <keepDependencies>false</keepDependencies>
   <properties>
+    <jenkins.model.BuildDiscarderProperty>
+      <strategy class="hudson.tasks.LogRotator">
+        <daysToKeep>-1</daysToKeep>
+        <numToKeep>3</numToKeep>
+        <artifactDaysToKeep>-1</artifactDaysToKeep>
+        <artifactNumToKeep>-1</artifactNumToKeep>
+      </strategy>
+    </jenkins.model.BuildDiscarderProperty>
     <org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
       <triggers>
-        <hudson.triggers.TimerTrigger>
-          <spec>H * * * *
-</spec>
-        </hudson.triggers.TimerTrigger>
+        <hudson.triggers.SCMTrigger>
+          <spec></spec>
+          <ignorePostCommitHooks>false</ignorePostCommitHooks>
+        </hudson.triggers.SCMTrigger>
       </triggers>
     </org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
   </properties>
@@ -33,28 +46,40 @@
     }
 
     stages {
+        stage(&apos;checkout&apos;) {
+          steps {
+            script {
+                    properties([pipelineTriggers([pollSCM(&apos;&apos;)])])
+                }
+                //define scm connection for polling
+                git branch: &apos;main&apos;,
+                url: &apos;https://github.com/adanil/sberdevhw3.git&apos;
+          }
+        }
+        
+        
         stage(&apos;GIT CLONE&apos;) {
             steps{
-                git branch: &apos;hw3&apos;,
-                url: &apos;https://github.com/adanil/sberDevops.git&apos;
+                git branch: &apos;main&apos;,
+                url: &apos;https://github.com/adanil/sberdevhw3.git&apos;
             }
         }
         stage(&apos;Build&apos;) {
             steps {
-                dir(&apos;hw3&apos;) {
+                
                   sh &apos;ls&apos;
                   sh &apos;go build -o simpleServer main.go&apos;
-                }
+            
 
             }
         }
         stage(&apos;Run tests&apos;) {
             steps {
-                dir(&apos;hw3&apos;) {
-                  sh &apos;ls&apos;
-                  sh &apos;./simpleServer &amp;&apos;
-                }
-                dir(&apos;hw3/tests&apos;) {
+                
+                sh &apos;ls&apos;
+                sh &apos;./simpleServer &amp;&apos;
+                
+                dir(&apos;tests&apos;) {
                   sh &apos;ls&apos;
                   sh &apos;sleep 1s&apos;
                   sh &apos;newman run hw3_tests.json -r allure&apos;
@@ -85,18 +110,17 @@
                  sh &apos;&apos;&apos;$SCANNER_HOME/bin/sonar-scanner \
                  -Dsonar.projectKey=SBERhw3 \
                  -Dsonar.projectName=goserver \
-                 -Dsonar.sources=hw3/main.go,hw3/server/server.go&apos;&apos;&apos;
+                 -Dsonar.sources=main.go,server/server.go&apos;&apos;&apos;
                }
              }
         }
         stage(&apos;Build docker image&apos;) {
             steps {
-                dir(&apos;hw3&apos;) {
+                
                   sh &apos;ls&apos;
                   script{
                     docker.build(&quot;hw3/server_image&quot;)
                   }
-                }
 
             }
         }

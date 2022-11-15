@@ -1,0 +1,12 @@
+Started on Nov 15, 2022, 7:35:00 PM
+Using strategy: Default
+[poll] Last Built Revision: Revision e0a5520d6d33126e6a8b4c8f6603477cd37ff5a4 (refs/remotes/origin/hw3)
+The recommended git tool is: NONE
+No credentials specified
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+ > git ls-remote -h -- https://github.com/adanil/sberDevops.git # timeout=10
+Found 3 remote heads on https://github.com/adanil/sberDevops.git
+[poll] Latest remote head revision on refs/heads/hw3 is: e0a5520d6d33126e6a8b4c8f6603477cd37ff5a4 - already built by 18
+Done. Took 2.3 sec
+No changes
