@@ -1,0 +1,1137 @@
+0 verbose cli /var/jenkins_home/tools/jenkins.plugins.nodejs.tools.NodeJSInstallation/nodejs/bin/node /var/jenkins_home/tools/jenkins.plugins.nodejs.tools.NodeJSInstallation/nodejs/bin/npm
+1 info using npm@8.19.3
+2 info using node@v19.1.0
+3 timing npm:load:whichnode Completed in 0ms
+4 timing config:load:defaults Completed in 1ms
+5 timing config:load:file:/var/jenkins_home/tools/jenkins.plugins.nodejs.tools.NodeJSInstallation/nodejs/lib/node_modules/npm/npmrc Completed in 0ms
+6 timing config:load:builtin Completed in 0ms
+7 timing config:load:cli Completed in 1ms
+8 timing config:load:env Completed in 1ms
+9 timing config:load:project Completed in 1ms
+10 timing config:load:file:/var/jenkins_home/.npmrc Completed in 0ms
+11 timing config:load:user Completed in 0ms
+12 timing config:load:file:/var/jenkins_home/tools/jenkins.plugins.nodejs.tools.NodeJSInstallation/nodejs/etc/npmrc Completed in 0ms
+13 timing config:load:global Completed in 0ms
+14 timing config:load:validate Completed in 0ms
+15 timing config:load:credentials Completed in 1ms
+16 timing config:load:setEnvs Completed in 0ms
+17 timing config:load Completed in 5ms
+18 timing npm:load:configload Completed in 5ms
+19 timing npm:load:mkdirpcache Completed in 2ms
+20 timing npm:load:mkdirplogs Completed in 1ms
+21 verbose title npm install newman newman-reporter-allure
+22 verbose argv "install" "--global" "newman" "newman-reporter-allure"
+23 timing npm:load:setTitle Completed in 0ms
+24 timing config:load:flatten Completed in 1ms
+25 timing npm:load:display Completed in 2ms
+26 verbose logfile logs-max:10 dir:/var/jenkins_home/.npm/_logs
+27 verbose logfile /var/jenkins_home/.npm/_logs/2022-11-15T16_53_46_704Z-debug-0.log
+28 timing npm:load:logFile Completed in 3ms
+29 timing npm:load:timers Completed in 0ms
+30 timing npm:load:configScope Completed in 0ms
+31 timing npm:load Completed in 13ms
+32 timing arborist:ctor Completed in 0ms
+33 silly logfile done cleaning log files
+34 timing idealTree:init Completed in 3ms
+35 timing idealTree:userRequests Completed in 1ms
+36 silly idealTree buildDeps
+37 silly fetch manifest newman@*
+38 http fetch GET 200 https://registry.npmjs.org/npm 215ms (cache miss)
+39 http fetch GET 200 https://registry.npmjs.org/newman 367ms (cache miss)
+40 silly fetch manifest newman-reporter-allure@*
+41 http fetch GET 200 https://registry.npmjs.org/newman-reporter-allure 834ms (cache miss)
+42 silly placeDep ROOT newman@5.3.2 OK for:  want: *
+43 silly placeDep ROOT newman-reporter-allure@1.0.7 OK for:  want: *
+44 silly fetch manifest async@3.2.3
+45 silly fetch manifest chardet@1.4.0
+46 silly fetch manifest cli-progress@3.10.0
+47 silly fetch manifest cli-table3@0.6.1
+48 silly fetch manifest colors@1.4.0
+49 silly fetch manifest commander@7.2.0
+50 silly fetch manifest csv-parse@4.16.3
+51 silly fetch manifest eventemitter3@4.0.7
+52 silly fetch manifest filesize@8.0.7
+53 silly fetch manifest lodash@4.17.21
+54 silly fetch manifest mkdirp@1.0.4
+55 silly fetch manifest postman-collection@4.1.1
+56 silly fetch manifest postman-collection-transformer@4.1.6
+57 silly fetch manifest postman-request@2.88.1-postman.31
+58 silly fetch manifest postman-runtime@7.29.0
+59 silly fetch manifest pretty-ms@7.0.1
+60 silly fetch manifest semver@7.3.5
+61 silly fetch manifest serialised-error@1.1.3
+62 silly fetch manifest tough-cookie@3.0.1
+63 silly fetch manifest word-wrap@1.2.3
+64 silly fetch manifest xmlbuilder@15.1.1
+65 silly fetch manifest allure-js-commons@^2.0.0-beta.6
+66 silly fetch manifest lodash@^4.17.15
+67 http fetch GET 200 https://registry.npmjs.org/chardet 41ms (cache miss)
+68 http fetch GET 200 https://registry.npmjs.org/async 48ms (cache miss)
+69 http fetch GET 200 https://registry.npmjs.org/colors 67ms (cache miss)
+70 http fetch GET 200 https://registry.npmjs.org/semver 84ms (cache miss)
+71 http fetch GET 200 https://registry.npmjs.org/cli-table3 89ms (cache miss)
+72 http fetch GET 200 https://registry.npmjs.org/mkdirp 88ms (cache miss)
+73 http fetch GET 200 https://registry.npmjs.org/filesize 90ms (cache miss)
+74 http fetch GET 200 https://registry.npmjs.org/lodash 94ms (cache miss)
+75 http fetch GET 200 https://registry.npmjs.org/pretty-ms 93ms (cache miss)
+76 http fetch GET 200 https://registry.npmjs.org/commander 96ms (cache miss)
+77 http fetch GET 200 https://registry.npmjs.org/eventemitter3 96ms (cache miss)
+78 http fetch GET 200 https://registry.npmjs.org/tough-cookie 103ms (cache miss)
+79 http fetch GET 200 https://registry.npmjs.org/word-wrap 112ms (cache miss)
+80 http fetch GET 200 https://registry.npmjs.org/allure-js-commons 115ms (cache miss)
+81 http fetch GET 200 https://registry.npmjs.org/xmlbuilder 123ms (cache miss)
+82 http fetch GET 200 https://registry.npmjs.org/lodash 126ms (cache miss)
+83 http fetch GET 200 https://registry.npmjs.org/csv-parse 142ms (cache miss)
+84 http fetch GET 200 https://registry.npmjs.org/cli-progress 842ms (cache miss)
+85 http fetch GET 200 https://registry.npmjs.org/postman-runtime 857ms (cache miss)
+86 http fetch GET 200 https://registry.npmjs.org/postman-collection-transformer 880ms (cache miss)
+87 http fetch GET 200 https://registry.npmjs.org/postman-request 899ms (cache miss)
+88 http fetch GET 200 https://registry.npmjs.org/serialised-error 905ms (cache miss)
+89 http fetch GET 200 https://registry.npmjs.org/postman-collection 909ms (cache miss)
+90 timing idealTree:#root Completed in 2123ms
+91 silly placeDep node_modules/newman async@3.2.3 OK for: newman@5.3.2 want: 3.2.3
+92 silly placeDep node_modules/newman chardet@1.4.0 OK for: newman@5.3.2 want: 1.4.0
+93 silly placeDep node_modules/newman cli-progress@3.10.0 OK for: newman@5.3.2 want: 3.10.0
+94 silly placeDep node_modules/newman cli-table3@0.6.1 OK for: newman@5.3.2 want: 0.6.1
+95 silly placeDep node_modules/newman colors@1.4.0 OK for: newman@5.3.2 want: 1.4.0
+96 silly placeDep node_modules/newman commander@7.2.0 OK for: newman@5.3.2 want: 7.2.0
+97 silly placeDep node_modules/newman csv-parse@4.16.3 OK for: newman@5.3.2 want: 4.16.3
+98 silly placeDep node_modules/newman eventemitter3@4.0.7 OK for: newman@5.3.2 want: 4.0.7
+99 silly placeDep node_modules/newman filesize@8.0.7 OK for: newman@5.3.2 want: 8.0.7
+100 silly placeDep node_modules/newman lodash@4.17.21 OK for: newman@5.3.2 want: 4.17.21
+101 silly placeDep node_modules/newman mkdirp@1.0.4 OK for: newman@5.3.2 want: 1.0.4
+102 silly placeDep node_modules/newman postman-collection@4.1.1 OK for: newman@5.3.2 want: 4.1.1
+103 silly placeDep node_modules/newman postman-collection-transformer@4.1.6 OK for: newman@5.3.2 want: 4.1.6
+104 silly placeDep node_modules/newman postman-request@2.88.1-postman.31 OK for: newman@5.3.2 want: 2.88.1-postman.31
+105 silly placeDep node_modules/newman postman-runtime@7.29.0 OK for: newman@5.3.2 want: 7.29.0
+106 silly placeDep node_modules/newman pretty-ms@7.0.1 OK for: newman@5.3.2 want: 7.0.1
+107 silly placeDep node_modules/newman semver@7.3.5 OK for: newman@5.3.2 want: 7.3.5
+108 silly placeDep node_modules/newman serialised-error@1.1.3 OK for: newman@5.3.2 want: 1.1.3
+109 silly placeDep node_modules/newman tough-cookie@3.0.1 OK for: newman@5.3.2 want: 3.0.1
+110 silly placeDep node_modules/newman word-wrap@1.2.3 OK for: newman@5.3.2 want: 1.2.3
+111 silly placeDep node_modules/newman xmlbuilder@15.1.1 OK for: newman@5.3.2 want: 15.1.1
+112 silly fetch manifest string-width@^4.2.0
+113 silly fetch manifest faker@5.5.3
+114 silly fetch manifest file-type@3.9.0
+115 silly fetch manifest http-reasons@0.1.0
+116 silly fetch manifest iconv-lite@0.6.3
+117 silly fetch manifest liquid-json@0.3.1
+118 silly fetch manifest mime-format@2.0.1
+119 silly fetch manifest mime-types@2.1.34
+120 silly fetch manifest postman-url-encoder@3.0.5
+121 silly fetch manifest uuid@8.3.2
+122 silly fetch manifest commander@8.3.0
+123 silly fetch manifest inherits@2.0.4
+124 silly fetch manifest strip-json-comments@3.1.1
+125 silly fetch manifest @postman/form-data@~3.1.1
+126 silly fetch manifest @postman/tunnel-agent@^0.6.3
+127 silly fetch manifest aws-sign2@~0.7.0
+128 silly fetch manifest aws4@^1.8.0
+129 silly fetch manifest brotli@~1.3.2
+130 silly fetch manifest caseless@~0.12.0
+131 silly fetch manifest combined-stream@~1.0.6
+132 silly fetch manifest extend@~3.0.2
+133 silly fetch manifest forever-agent@~0.6.1
+134 silly fetch manifest har-validator@~5.1.3
+135 silly fetch manifest http-signature@~1.3.1
+136 silly fetch manifest is-typedarray@~1.0.0
+137 silly fetch manifest isstream@~0.1.2
+138 silly fetch manifest json-stringify-safe@~5.0.1
+139 silly fetch manifest mime-types@~2.1.19
+140 silly fetch manifest oauth-sign@~0.9.0
+141 silly fetch manifest performance-now@^2.1.0
+142 silly fetch manifest qs@~6.5.2
+143 silly fetch manifest safe-buffer@^5.1.2
+144 silly fetch manifest stream-length@^1.0.2
+145 silly fetch manifest tough-cookie@~2.5.0
+146 silly fetch manifest uuid@^3.3.2
+147 silly fetch manifest aws4@1.11.0
+148 silly fetch manifest handlebars@4.7.7
+149 silly fetch manifest httpntlm@1.7.7
+150 silly fetch manifest js-sha512@0.8.0
+151 silly fetch manifest node-oauth1@1.3.0
+152 silly fetch manifest performance-now@2.1.0
+153 silly fetch manifest postman-sandbox@4.0.6
+154 silly fetch manifest parse-ms@^2.1.0
+155 silly fetch manifest lru-cache@^6.0.0
+156 silly fetch manifest object-hash@^1.1.2
+157 silly fetch manifest stack-trace@0.0.9
+158 silly fetch manifest uuid@^3.0.0
+159 silly fetch manifest ip-regex@^2.1.0
+160 silly fetch manifest psl@^1.1.28
+161 silly fetch manifest punycode@^2.1.1
+162 http fetch GET 200 https://registry.npmjs.org/iconv-lite 59ms (cache miss)
+163 http fetch GET 200 https://registry.npmjs.org/string-width 67ms (cache miss)
+164 http fetch GET 200 https://registry.npmjs.org/strip-json-comments 68ms (cache miss)
+165 http fetch GET 200 https://registry.npmjs.org/file-type 72ms (cache miss)
+166 http fetch GET 200 https://registry.npmjs.org/uuid 70ms (cache miss)
+167 http fetch GET 200 https://registry.npmjs.org/mime-types 72ms (cache miss)
+168 http fetch GET 200 https://registry.npmjs.org/aws-sign2 78ms (cache miss)
+169 http fetch GET 200 https://registry.npmjs.org/caseless 89ms (cache miss)
+170 http fetch GET 200 https://registry.npmjs.org/aws4 91ms (cache miss)
+171 http fetch GET 200 https://registry.npmjs.org/inherits 93ms (cache miss)
+172 http fetch GET 200 https://registry.npmjs.org/combined-stream 92ms (cache miss)
+173 http fetch GET 200 https://registry.npmjs.org/extend 94ms (cache miss)
+174 http fetch GET 200 https://registry.npmjs.org/forever-agent 110ms (cache miss)
+175 http fetch GET 200 https://registry.npmjs.org/json-stringify-safe 118ms (cache miss)
+176 http fetch GET 200 https://registry.npmjs.org/mime-types 119ms (cache miss)
+177 http fetch GET 200 https://registry.npmjs.org/is-typedarray 121ms (cache miss)
+178 http fetch GET 200 https://registry.npmjs.org/http-signature 124ms (cache miss)
+179 http fetch GET 200 https://registry.npmjs.org/isstream 127ms (cache miss)
+180 http fetch GET 200 https://registry.npmjs.org/har-validator 139ms (cache miss)
+181 http fetch GET 200 https://registry.npmjs.org/oauth-sign 136ms (cache miss)
+182 http fetch GET 200 https://registry.npmjs.org/brotli 146ms (cache miss)
+183 http fetch GET 200 https://registry.npmjs.org/performance-now 145ms (cache miss)
+184 http fetch GET 200 https://registry.npmjs.org/qs 152ms (cache miss)
+185 http fetch GET 200 https://registry.npmjs.org/uuid 156ms (cache miss)
+186 http fetch GET 200 https://registry.npmjs.org/js-sha512 172ms (cache miss)
+187 http fetch GET 200 https://registry.npmjs.org/aws4 174ms (cache miss)
+188 http fetch GET 200 https://registry.npmjs.org/handlebars 180ms (cache miss)
+189 http fetch GET 200 https://registry.npmjs.org/safe-buffer 188ms (cache miss)
+190 http fetch GET 200 https://registry.npmjs.org/performance-now 189ms (cache miss)
+191 http fetch GET 200 https://registry.npmjs.org/parse-ms 206ms (cache miss)
+192 http fetch GET 200 https://registry.npmjs.org/lru-cache 207ms (cache miss)
+193 http fetch GET 200 https://registry.npmjs.org/stack-trace 219ms (cache miss)
+194 http fetch GET 200 https://registry.npmjs.org/object-hash 234ms (cache miss)
+195 http fetch GET 200 https://registry.npmjs.org/ip-regex 239ms (cache miss)
+196 http fetch GET 200 https://registry.npmjs.org/uuid 240ms (cache miss)
+197 http fetch GET 200 https://registry.npmjs.org/psl 252ms (cache miss)
+198 http fetch GET 200 https://registry.npmjs.org/punycode 275ms (cache miss)
+199 http fetch GET 200 https://registry.npmjs.org/mime-format 860ms (cache miss)
+200 http fetch GET 200 https://registry.npmjs.org/liquid-json 861ms (cache miss)
+201 http fetch GET 200 https://registry.npmjs.org/http-reasons 898ms (cache miss)
+202 http fetch GET 200 https://registry.npmjs.org/postman-url-encoder 902ms (cache miss)
+203 http fetch GET 200 https://registry.npmjs.org/faker 924ms (cache miss)
+204 http fetch GET 200 https://registry.npmjs.org/httpntlm 934ms (cache miss)
+205 http fetch GET 200 https://registry.npmjs.org/stream-length 953ms (cache miss)
+206 http fetch GET 200 https://registry.npmjs.org/node-oauth1 977ms (cache miss)
+207 http fetch GET 200 https://registry.npmjs.org/postman-sandbox 1012ms (cache miss)
+208 http fetch GET 200 https://registry.npmjs.org/@postman%2fform-data 1799ms (cache miss)
+209 http fetch GET 200 https://registry.npmjs.org/@postman%2ftunnel-agent 1880ms (cache miss)
+210 timing idealTree:node_modules/newman Completed in 1904ms
+211 silly placeDep node_modules/newman-reporter-allure allure-js-commons@2.0.0-beta.19 OK for: newman-reporter-allure@1.0.7 want: ^2.0.0-beta.6
+212 silly placeDep node_modules/newman-reporter-allure lodash@4.17.21 OK for: newman-reporter-allure@1.0.7 want: ^4.17.15
+213 silly fetch manifest mkdirp@^1.0.4
+214 silly fetch manifest properties@^1.2.1
+215 silly fetch manifest uuid@^8.3.0
+216 http fetch GET 200 https://registry.npmjs.org/properties 850ms (cache miss)
+217 timing idealTree:node_modules/newman-reporter-allure Completed in 852ms
+218 silly placeDep node_modules/newman-reporter-allure mkdirp@1.0.4 OK for: allure-js-commons@2.0.0-beta.19 want: ^1.0.4
+219 silly placeDep node_modules/newman-reporter-allure properties@1.2.1 OK for: allure-js-commons@2.0.0-beta.19 want: ^1.2.1
+220 silly placeDep node_modules/newman-reporter-allure uuid@8.3.2 OK for: allure-js-commons@2.0.0-beta.19 want: ^8.3.0
+221 timing idealTree:node_modules/newman-reporter-allure/node_modules/allure-js-commons Completed in 3ms
+222 timing idealTree:node_modules/newman-reporter-allure/node_modules/lodash Completed in 0ms
+223 timing idealTree:node_modules/newman-reporter-allure/node_modules/mkdirp Completed in 0ms
+224 timing idealTree:node_modules/newman-reporter-allure/node_modules/properties Completed in 0ms
+225 timing idealTree:node_modules/newman-reporter-allure/node_modules/uuid Completed in 0ms
+226 timing idealTree:node_modules/newman/node_modules/async Completed in 0ms
+227 timing idealTree:node_modules/newman/node_modules/chardet Completed in 0ms
+228 silly placeDep node_modules/newman string-width@4.2.3 OK for: cli-progress@3.10.0 want: ^4.2.0
+229 silly fetch manifest emoji-regex@^8.0.0
+230 silly fetch manifest is-fullwidth-code-point@^3.0.0
+231 silly fetch manifest strip-ansi@^6.0.1
+232 http fetch GET 200 https://registry.npmjs.org/is-fullwidth-code-point 26ms (cache miss)
+233 http fetch GET 200 https://registry.npmjs.org/emoji-regex 37ms (cache miss)
+234 http fetch GET 200 https://registry.npmjs.org/strip-ansi 66ms (cache miss)
+235 timing idealTree:node_modules/newman/node_modules/cli-progress Completed in 69ms
+236 timing idealTree:node_modules/newman/node_modules/cli-table3 Completed in 0ms
+237 timing idealTree:node_modules/newman/node_modules/colors Completed in 0ms
+238 timing idealTree:node_modules/newman/node_modules/commander Completed in 0ms
+239 timing idealTree:node_modules/newman/node_modules/csv-parse Completed in 0ms
+240 timing idealTree:node_modules/newman/node_modules/eventemitter3 Completed in 0ms
+241 timing idealTree:node_modules/newman/node_modules/filesize Completed in 0ms
+242 timing idealTree:node_modules/newman/node_modules/lodash Completed in 0ms
+243 timing idealTree:node_modules/newman/node_modules/mkdirp Completed in 0ms
+244 silly placeDep node_modules/newman faker@5.5.3 OK for: postman-collection@4.1.1 want: 5.5.3
+245 silly placeDep node_modules/newman file-type@3.9.0 OK for: postman-collection@4.1.1 want: 3.9.0
+246 silly placeDep node_modules/newman http-reasons@0.1.0 OK for: postman-collection@4.1.1 want: 0.1.0
+247 silly placeDep node_modules/newman iconv-lite@0.6.3 OK for: postman-collection@4.1.1 want: 0.6.3
+248 silly placeDep node_modules/newman liquid-json@0.3.1 OK for: postman-collection@4.1.1 want: 0.3.1
+249 silly placeDep node_modules/newman mime-format@2.0.1 OK for: postman-collection@4.1.1 want: 2.0.1
+250 silly placeDep node_modules/newman mime-types@2.1.34 OK for: postman-collection@4.1.1 want: 2.1.34
+251 silly placeDep node_modules/newman postman-url-encoder@3.0.5 OK for: postman-collection@4.1.1 want: 3.0.5
+252 silly placeDep node_modules/newman uuid@8.3.2 OK for: postman-collection@4.1.1 want: 8.3.2
+253 silly fetch manifest safer-buffer@>= 2.1.2 < 3.0.0
+254 silly fetch manifest charset@^1.0.0
+255 silly fetch manifest mime-db@1.51.0
+256 http fetch GET 200 https://registry.npmjs.org/safer-buffer 53ms (cache miss)
+257 http fetch GET 200 https://registry.npmjs.org/mime-db 55ms (cache miss)
+258 http fetch GET 200 https://registry.npmjs.org/charset 855ms (cache miss)
+259 timing idealTree:node_modules/newman/node_modules/postman-collection Completed in 865ms
+260 timing idealTree:node_modules/newman/node_modules/faker Completed in 0ms
+261 timing idealTree:node_modules/newman/node_modules/file-type Completed in 0ms
+262 timing idealTree:node_modules/newman/node_modules/http-reasons Completed in 0ms
+263 silly placeDep node_modules/newman safer-buffer@2.1.2 OK for: iconv-lite@0.6.3 want: >= 2.1.2 < 3.0.0
+264 timing idealTree:node_modules/newman/node_modules/iconv-lite Completed in 1ms
+265 timing idealTree:node_modules/newman/node_modules/liquid-json Completed in 0ms
+266 silly placeDep node_modules/newman charset@1.0.1 OK for: mime-format@2.0.1 want: ^1.0.0
+267 timing idealTree:node_modules/newman/node_modules/mime-format Completed in 0ms
+268 timing idealTree:node_modules/newman/node_modules/charset Completed in 0ms
+269 silly placeDep node_modules/newman mime-db@1.51.0 OK for: mime-types@2.1.34 want: 1.51.0
+270 timing idealTree:node_modules/newman/node_modules/mime-types Completed in 1ms
+271 timing idealTree:node_modules/newman/node_modules/mime-db Completed in 0ms
+272 silly placeDep node_modules/newman/node_modules/postman-collection-transformer commander@8.3.0 OK for: postman-collection-transformer@4.1.6 want: 8.3.0
+273 silly placeDep node_modules/newman inherits@2.0.4 OK for: postman-collection-transformer@4.1.6 want: 2.0.4
+274 silly placeDep node_modules/newman strip-json-comments@3.1.1 OK for: postman-collection-transformer@4.1.6 want: 3.1.1
+275 timing idealTree:node_modules/newman/node_modules/postman-collection-transformer Completed in 2ms
+276 timing idealTree:node_modules/newman/node_modules/inherits Completed in 0ms
+277 silly placeDep node_modules/newman @postman/form-data@3.1.1 OK for: postman-request@2.88.1-postman.31 want: ~3.1.1
+278 silly placeDep node_modules/newman @postman/tunnel-agent@0.6.3 OK for: postman-request@2.88.1-postman.31 want: ^0.6.3
+279 silly placeDep node_modules/newman aws-sign2@0.7.0 OK for: postman-request@2.88.1-postman.31 want: ~0.7.0
+280 silly placeDep node_modules/newman aws4@1.11.0 OK for: postman-request@2.88.1-postman.31 want: ^1.8.0
+281 silly placeDep node_modules/newman brotli@1.3.3 OK for: postman-request@2.88.1-postman.31 want: ~1.3.2
+282 silly placeDep node_modules/newman caseless@0.12.0 OK for: postman-request@2.88.1-postman.31 want: ~0.12.0
+283 silly placeDep node_modules/newman combined-stream@1.0.8 OK for: postman-request@2.88.1-postman.31 want: ~1.0.6
+284 silly placeDep node_modules/newman extend@3.0.2 OK for: postman-request@2.88.1-postman.31 want: ~3.0.2
+285 silly placeDep node_modules/newman forever-agent@0.6.1 OK for: postman-request@2.88.1-postman.31 want: ~0.6.1
+286 silly placeDep node_modules/newman har-validator@5.1.5 OK for: postman-request@2.88.1-postman.31 want: ~5.1.3
+287 silly placeDep node_modules/newman http-signature@1.3.6 OK for: postman-request@2.88.1-postman.31 want: ~1.3.1
+288 silly placeDep node_modules/newman is-typedarray@1.0.0 OK for: postman-request@2.88.1-postman.31 want: ~1.0.0
+289 silly placeDep node_modules/newman isstream@0.1.2 OK for: postman-request@2.88.1-postman.31 want: ~0.1.2
+290 silly placeDep node_modules/newman json-stringify-safe@5.0.1 OK for: postman-request@2.88.1-postman.31 want: ~5.0.1
+291 silly placeDep node_modules/newman oauth-sign@0.9.0 OK for: postman-request@2.88.1-postman.31 want: ~0.9.0
+292 silly placeDep node_modules/newman performance-now@2.1.0 OK for: postman-request@2.88.1-postman.31 want: ^2.1.0
+293 silly placeDep node_modules/newman qs@6.5.3 OK for: postman-request@2.88.1-postman.31 want: ~6.5.2
+294 silly placeDep node_modules/newman safe-buffer@5.2.1 OK for: postman-request@2.88.1-postman.31 want: ^5.1.2
+295 silly placeDep node_modules/newman stream-length@1.0.2 OK for: postman-request@2.88.1-postman.31 want: ^1.0.2
+296 silly placeDep node_modules/newman/node_modules/postman-request tough-cookie@2.5.0 OK for: postman-request@2.88.1-postman.31 want: ~2.5.0
+297 silly placeDep node_modules/newman/node_modules/postman-request uuid@3.4.0 OK for: postman-request@2.88.1-postman.31 want: ^3.3.2
+298 silly fetch manifest asynckit@^0.4.0
+299 silly fetch manifest base64-js@^1.1.2
+300 silly fetch manifest delayed-stream@~1.0.0
+301 silly fetch manifest ajv@^6.12.3
+302 silly fetch manifest har-schema@^2.0.0
+303 silly fetch manifest assert-plus@^1.0.0
+304 silly fetch manifest jsprim@^2.0.2
+305 silly fetch manifest sshpk@^1.14.1
+306 silly fetch manifest bluebird@^2.6.2
+307 http fetch GET 200 https://registry.npmjs.org/asynckit 33ms (cache miss)
+308 http fetch GET 200 https://registry.npmjs.org/jsprim 34ms (cache miss)
+309 http fetch GET 200 https://registry.npmjs.org/assert-plus 36ms (cache miss)
+310 http fetch GET 200 https://registry.npmjs.org/delayed-stream 39ms (cache miss)
+311 http fetch GET 200 https://registry.npmjs.org/sshpk 54ms (cache miss)
+312 http fetch GET 200 https://registry.npmjs.org/har-schema 61ms (cache miss)
+313 http fetch GET 200 https://registry.npmjs.org/ajv 62ms (cache miss)
+314 http fetch GET 200 https://registry.npmjs.org/bluebird 64ms (cache miss)
+315 http fetch GET 200 https://registry.npmjs.org/base64-js 875ms (cache miss)
+316 timing idealTree:node_modules/newman/node_modules/postman-request Completed in 888ms
+317 silly placeDep node_modules/newman asynckit@0.4.0 OK for: @postman/form-data@3.1.1 want: ^0.4.0
+318 timing idealTree:node_modules/newman/node_modules/@postman/form-data Completed in 1ms
+319 timing idealTree:node_modules/newman/node_modules/@postman/tunnel-agent Completed in 1ms
+320 timing idealTree:node_modules/newman/node_modules/asynckit Completed in 0ms
+321 timing idealTree:node_modules/newman/node_modules/aws-sign2 Completed in 0ms
+322 timing idealTree:node_modules/newman/node_modules/aws4 Completed in 0ms
+323 silly placeDep node_modules/newman base64-js@1.5.1 OK for: brotli@1.3.3 want: ^1.1.2
+324 timing idealTree:node_modules/newman/node_modules/brotli Completed in 2ms
+325 timing idealTree:node_modules/newman/node_modules/base64-js Completed in 0ms
+326 timing idealTree:node_modules/newman/node_modules/caseless Completed in 0ms
+327 silly placeDep node_modules/newman delayed-stream@1.0.0 OK for: combined-stream@1.0.8 want: ~1.0.0
+328 timing idealTree:node_modules/newman/node_modules/combined-stream Completed in 1ms
+329 timing idealTree:node_modules/newman/node_modules/delayed-stream Completed in 0ms
+330 timing idealTree:node_modules/newman/node_modules/extend Completed in 0ms
+331 timing idealTree:node_modules/newman/node_modules/forever-agent Completed in 0ms
+332 silly placeDep node_modules/newman ajv@6.12.6 OK for: har-validator@5.1.5 want: ^6.12.3
+333 silly placeDep node_modules/newman har-schema@2.0.0 OK for: har-validator@5.1.5 want: ^2.0.0
+334 silly fetch manifest fast-deep-equal@^3.1.1
+335 silly fetch manifest fast-json-stable-stringify@^2.0.0
+336 silly fetch manifest json-schema-traverse@^0.4.1
+337 silly fetch manifest uri-js@^4.2.2
+338 http fetch GET 200 https://registry.npmjs.org/uri-js 32ms (cache miss)
+339 http fetch GET 200 https://registry.npmjs.org/fast-json-stable-stringify 42ms (cache miss)
+340 http fetch GET 200 https://registry.npmjs.org/fast-deep-equal 43ms (cache miss)
+341 http fetch GET 200 https://registry.npmjs.org/json-schema-traverse 76ms (cache miss)
+342 timing idealTree:node_modules/newman/node_modules/har-validator Completed in 82ms
+343 silly placeDep node_modules/newman fast-deep-equal@3.1.3 OK for: ajv@6.12.6 want: ^3.1.1
+344 silly placeDep node_modules/newman fast-json-stable-stringify@2.1.0 OK for: ajv@6.12.6 want: ^2.0.0
+345 silly placeDep node_modules/newman json-schema-traverse@0.4.1 OK for: ajv@6.12.6 want: ^0.4.1
+346 silly placeDep node_modules/newman uri-js@4.4.1 OK for: ajv@6.12.6 want: ^4.2.2
+347 silly fetch manifest punycode@^2.1.0
+348 timing idealTree:node_modules/newman/node_modules/ajv Completed in 2ms
+349 timing idealTree:node_modules/newman/node_modules/fast-deep-equal Completed in 0ms
+350 timing idealTree:node_modules/newman/node_modules/fast-json-stable-stringify Completed in 0ms
+351 timing idealTree:node_modules/newman/node_modules/har-schema Completed in 0ms
+352 silly placeDep node_modules/newman assert-plus@1.0.0 OK for: http-signature@1.3.6 want: ^1.0.0
+353 silly placeDep node_modules/newman jsprim@2.0.2 OK for: http-signature@1.3.6 want: ^2.0.2
+354 silly placeDep node_modules/newman sshpk@1.17.0 OK for: http-signature@1.3.6 want: ^1.14.1
+355 silly fetch manifest extsprintf@1.3.0
+356 silly fetch manifest json-schema@0.4.0
+357 silly fetch manifest verror@1.10.0
+358 silly fetch manifest asn1@~0.2.3
+359 silly fetch manifest dashdash@^1.12.0
+360 silly fetch manifest getpass@^0.1.1
+361 silly fetch manifest jsbn@~0.1.0
+362 silly fetch manifest tweetnacl@~0.14.0
+363 silly fetch manifest ecc-jsbn@~0.1.1
+364 silly fetch manifest bcrypt-pbkdf@^1.0.0
+365 http fetch GET 200 https://registry.npmjs.org/json-schema 44ms (cache miss)
+366 http fetch GET 200 https://registry.npmjs.org/getpass 42ms (cache miss)
+367 http fetch GET 200 https://registry.npmjs.org/verror 45ms (cache miss)
+368 http fetch GET 200 https://registry.npmjs.org/asn1 46ms (cache miss)
+369 http fetch GET 200 https://registry.npmjs.org/ecc-jsbn 42ms (cache miss)
+370 http fetch GET 200 https://registry.npmjs.org/jsbn 43ms (cache miss)
+371 http fetch GET 200 https://registry.npmjs.org/extsprintf 86ms (cache miss)
+372 http fetch GET 200 https://registry.npmjs.org/dashdash 107ms (cache miss)
+373 http fetch GET 200 https://registry.npmjs.org/bcrypt-pbkdf 864ms (cache miss)
+374 http fetch GET 200 https://registry.npmjs.org/tweetnacl 949ms (cache miss)
+375 timing idealTree:node_modules/newman/node_modules/http-signature Completed in 961ms
+376 timing idealTree:node_modules/newman/node_modules/assert-plus Completed in 0ms
+377 timing idealTree:node_modules/newman/node_modules/is-typedarray Completed in 0ms
+378 timing idealTree:node_modules/newman/node_modules/isstream Completed in 0ms
+379 timing idealTree:node_modules/newman/node_modules/json-schema-traverse Completed in 0ms
+380 timing idealTree:node_modules/newman/node_modules/json-stringify-safe Completed in 0ms
+381 silly placeDep node_modules/newman extsprintf@1.3.0 OK for: jsprim@2.0.2 want: 1.3.0
+382 silly placeDep node_modules/newman json-schema@0.4.0 OK for: jsprim@2.0.2 want: 0.4.0
+383 silly placeDep node_modules/newman verror@1.10.0 OK for: jsprim@2.0.2 want: 1.10.0
+384 silly fetch manifest core-util-is@1.0.2
+385 http fetch GET 200 https://registry.npmjs.org/core-util-is 33ms (cache miss)
+386 timing idealTree:node_modules/newman/node_modules/jsprim Completed in 35ms
+387 timing idealTree:node_modules/newman/node_modules/extsprintf Completed in 1ms
+388 timing idealTree:node_modules/newman/node_modules/json-schema Completed in 0ms
+389 timing idealTree:node_modules/newman/node_modules/oauth-sign Completed in 0ms
+390 timing idealTree:node_modules/newman/node_modules/performance-now Completed in 0ms
+391 silly placeDep node_modules/newman handlebars@4.7.7 OK for: postman-runtime@7.29.0 want: 4.7.7
+392 silly placeDep node_modules/newman httpntlm@1.7.7 OK for: postman-runtime@7.29.0 want: 1.7.7
+393 silly placeDep node_modules/newman js-sha512@0.8.0 OK for: postman-runtime@7.29.0 want: 0.8.0
+394 silly placeDep node_modules/newman node-oauth1@1.3.0 OK for: postman-runtime@7.29.0 want: 1.3.0
+395 silly placeDep node_modules/newman postman-sandbox@4.0.6 OK for: postman-runtime@7.29.0 want: 4.0.6
+396 silly fetch manifest minimist@^1.2.5
+397 silly fetch manifest neo-async@^2.6.0
+398 silly fetch manifest source-map@^0.6.1
+399 silly fetch manifest wordwrap@^1.0.0
+400 silly fetch manifest uglify-js@^3.1.4
+401 silly fetch manifest httpreq@>=0.4.22
+402 silly fetch manifest underscore@~1.12.1
+403 silly fetch manifest teleport-javascript@1.0.0
+404 silly fetch manifest uvm@2.0.2
+405 http fetch GET 200 https://registry.npmjs.org/wordwrap 46ms (cache miss)
+406 http fetch GET 200 https://registry.npmjs.org/minimist 50ms (cache miss)
+407 http fetch GET 200 https://registry.npmjs.org/source-map 48ms (cache miss)
+408 http fetch GET 200 https://registry.npmjs.org/uglify-js 48ms (cache miss)
+409 http fetch GET 200 https://registry.npmjs.org/underscore 64ms (cache miss)
+410 http fetch GET 200 https://registry.npmjs.org/neo-async 70ms (cache miss)
+411 http fetch GET 200 https://registry.npmjs.org/uvm 832ms (cache miss)
+412 http fetch GET 200 https://registry.npmjs.org/httpreq 848ms (cache miss)
+413 http fetch GET 200 https://registry.npmjs.org/teleport-javascript 872ms (cache miss)
+414 timing idealTree:node_modules/newman/node_modules/postman-runtime Completed in 886ms
+415 silly placeDep node_modules/newman minimist@1.2.7 OK for: handlebars@4.7.7 want: ^1.2.5
+416 silly placeDep node_modules/newman neo-async@2.6.2 OK for: handlebars@4.7.7 want: ^2.6.0
+417 silly placeDep node_modules/newman source-map@0.6.1 OK for: handlebars@4.7.7 want: ^0.6.1
+418 silly placeDep node_modules/newman uglify-js@3.17.4 OK for: handlebars@4.7.7 want: ^3.1.4
+419 silly placeDep node_modules/newman wordwrap@1.0.0 OK for: handlebars@4.7.7 want: ^1.0.0
+420 timing idealTree:node_modules/newman/node_modules/handlebars Completed in 3ms
+421 silly placeDep node_modules/newman httpreq@0.5.2 OK for: httpntlm@1.7.7 want: >=0.4.22
+422 silly placeDep node_modules/newman underscore@1.12.1 OK for: httpntlm@1.7.7 want: ~1.12.1
+423 timing idealTree:node_modules/newman/node_modules/httpntlm Completed in 0ms
+424 timing idealTree:node_modules/newman/node_modules/httpreq Completed in 0ms
+425 timing idealTree:node_modules/newman/node_modules/js-sha512 Completed in 0ms
+426 timing idealTree:node_modules/newman/node_modules/minimist Completed in 0ms
+427 timing idealTree:node_modules/newman/node_modules/neo-async Completed in 0ms
+428 timing idealTree:node_modules/newman/node_modules/node-oauth1 Completed in 0ms
+429 silly placeDep node_modules/newman teleport-javascript@1.0.0 OK for: postman-sandbox@4.0.6 want: 1.0.0
+430 silly placeDep node_modules/newman uvm@2.0.2 OK for: postman-sandbox@4.0.6 want: 2.0.2
+431 silly fetch manifest flatted@3.1.1
+432 http fetch GET 200 https://registry.npmjs.org/flatted 52ms (cache miss)
+433 timing idealTree:node_modules/newman/node_modules/postman-sandbox Completed in 53ms
+434 silly placeDep node_modules/newman punycode@2.1.1 OK for: postman-url-encoder@3.0.5 want: ^2.1.1
+435 timing idealTree:node_modules/newman/node_modules/postman-url-encoder Completed in 1ms
+436 silly placeDep node_modules/newman parse-ms@2.1.0 OK for: pretty-ms@7.0.1 want: ^2.1.0
+437 timing idealTree:node_modules/newman/node_modules/pretty-ms Completed in 1ms
+438 timing idealTree:node_modules/newman/node_modules/parse-ms Completed in 0ms
+439 timing idealTree:node_modules/newman/node_modules/punycode Completed in 0ms
+440 timing idealTree:node_modules/newman/node_modules/qs Completed in 0ms
+441 timing idealTree:node_modules/newman/node_modules/safe-buffer Completed in 0ms
+442 timing idealTree:node_modules/newman/node_modules/safer-buffer Completed in 0ms
+443 silly placeDep node_modules/newman lru-cache@6.0.0 OK for: semver@7.3.5 want: ^6.0.0
+444 silly fetch manifest yallist@^4.0.0
+445 http fetch GET 200 https://registry.npmjs.org/yallist 29ms (cache miss)
+446 timing idealTree:node_modules/newman/node_modules/semver Completed in 30ms
+447 silly placeDep node_modules/newman yallist@4.0.0 OK for: lru-cache@6.0.0 want: ^4.0.0
+448 timing idealTree:node_modules/newman/node_modules/lru-cache Completed in 0ms
+449 silly placeDep node_modules/newman object-hash@1.3.1 OK for: serialised-error@1.1.3 want: ^1.1.2
+450 silly placeDep node_modules/newman stack-trace@0.0.9 OK for: serialised-error@1.1.3 want: 0.0.9
+451 silly placeDep node_modules/newman/node_modules/serialised-error uuid@3.4.0 OK for: serialised-error@1.1.3 want: ^3.0.0
+452 timing idealTree:node_modules/newman/node_modules/serialised-error Completed in 2ms
+453 timing idealTree:node_modules/newman/node_modules/object-hash Completed in 0ms
+454 timing idealTree:node_modules/newman/node_modules/source-map Completed in 0ms
+455 silly placeDep node_modules/newman asn1@0.2.6 OK for: sshpk@1.17.0 want: ~0.2.3
+456 silly placeDep node_modules/newman bcrypt-pbkdf@1.0.2 OK for: sshpk@1.17.0 want: ^1.0.0
+457 silly placeDep node_modules/newman dashdash@1.14.1 OK for: sshpk@1.17.0 want: ^1.12.0
+458 silly placeDep node_modules/newman ecc-jsbn@0.1.2 OK for: sshpk@1.17.0 want: ~0.1.1
+459 silly placeDep node_modules/newman getpass@0.1.7 OK for: sshpk@1.17.0 want: ^0.1.1
+460 silly placeDep node_modules/newman jsbn@0.1.1 OK for: sshpk@1.17.0 want: ~0.1.0
+461 silly placeDep node_modules/newman tweetnacl@0.14.5 OK for: sshpk@1.17.0 want: ~0.14.0
+462 timing idealTree:node_modules/newman/node_modules/sshpk Completed in 4ms
+463 timing idealTree:node_modules/newman/node_modules/asn1 Completed in 0ms
+464 timing idealTree:node_modules/newman/node_modules/bcrypt-pbkdf Completed in 0ms
+465 timing idealTree:node_modules/newman/node_modules/dashdash Completed in 0ms
+466 timing idealTree:node_modules/newman/node_modules/ecc-jsbn Completed in 0ms
+467 timing idealTree:node_modules/newman/node_modules/getpass Completed in 0ms
+468 timing idealTree:node_modules/newman/node_modules/jsbn Completed in 0ms
+469 timing idealTree:node_modules/newman/node_modules/stack-trace Completed in 0ms
+470 silly placeDep node_modules/newman bluebird@2.11.0 OK for: stream-length@1.0.2 want: ^2.6.2
+471 timing idealTree:node_modules/newman/node_modules/stream-length Completed in 0ms
+472 timing idealTree:node_modules/newman/node_modules/bluebird Completed in 0ms
+473 silly placeDep node_modules/newman emoji-regex@8.0.0 OK for: string-width@4.2.3 want: ^8.0.0
+474 silly placeDep node_modules/newman is-fullwidth-code-point@3.0.0 OK for: string-width@4.2.3 want: ^3.0.0
+475 silly placeDep node_modules/newman strip-ansi@6.0.1 OK for: string-width@4.2.3 want: ^6.0.1
+476 silly fetch manifest ansi-regex@^5.0.1
+477 http fetch GET 200 https://registry.npmjs.org/ansi-regex 37ms (cache miss)
+478 timing idealTree:node_modules/newman/node_modules/string-width Completed in 39ms
+479 timing idealTree:node_modules/newman/node_modules/emoji-regex Completed in 0ms
+480 timing idealTree:node_modules/newman/node_modules/is-fullwidth-code-point Completed in 0ms
+481 silly placeDep node_modules/newman ansi-regex@5.0.1 OK for: strip-ansi@6.0.1 want: ^5.0.1
+482 timing idealTree:node_modules/newman/node_modules/strip-ansi Completed in 2ms
+483 timing idealTree:node_modules/newman/node_modules/ansi-regex Completed in 0ms
+484 timing idealTree:node_modules/newman/node_modules/strip-json-comments Completed in 0ms
+485 timing idealTree:node_modules/newman/node_modules/teleport-javascript Completed in 0ms
+486 silly placeDep node_modules/newman ip-regex@2.1.0 OK for: tough-cookie@3.0.1 want: ^2.1.0
+487 silly placeDep node_modules/newman psl@1.9.0 OK for: tough-cookie@3.0.1 want: ^1.1.28
+488 timing idealTree:node_modules/newman/node_modules/tough-cookie Completed in 2ms
+489 timing idealTree:node_modules/newman/node_modules/ip-regex Completed in 0ms
+490 timing idealTree:node_modules/newman/node_modules/psl Completed in 0ms
+491 timing idealTree:node_modules/newman/node_modules/tweetnacl Completed in 0ms
+492 timing idealTree:node_modules/newman/node_modules/uglify-js Completed in 0ms
+493 timing idealTree:node_modules/newman/node_modules/underscore Completed in 0ms
+494 timing idealTree:node_modules/newman/node_modules/uri-js Completed in 0ms
+495 timing idealTree:node_modules/newman/node_modules/uuid Completed in 0ms
+496 silly placeDep node_modules/newman flatted@3.1.1 OK for: uvm@2.0.2 want: 3.1.1
+497 timing idealTree:node_modules/newman/node_modules/uvm Completed in 1ms
+498 timing idealTree:node_modules/newman/node_modules/flatted Completed in 0ms
+499 silly placeDep node_modules/newman core-util-is@1.0.2 OK for: verror@1.10.0 want: 1.0.2
+500 timing idealTree:node_modules/newman/node_modules/verror Completed in 1ms
+501 timing idealTree:node_modules/newman/node_modules/core-util-is Completed in 0ms
+502 timing idealTree:node_modules/newman/node_modules/word-wrap Completed in 0ms
+503 timing idealTree:node_modules/newman/node_modules/wordwrap Completed in 0ms
+504 timing idealTree:node_modules/newman/node_modules/xmlbuilder Completed in 0ms
+505 timing idealTree:node_modules/newman/node_modules/yallist Completed in 0ms
+506 timing idealTree:node_modules/newman/node_modules/postman-collection-transformer/node_modules/commander Completed in 0ms
+507 timing idealTree:node_modules/newman/node_modules/postman-request/node_modules/tough-cookie Completed in 0ms
+508 timing idealTree:node_modules/newman/node_modules/postman-request/node_modules/uuid Completed in 0ms
+509 timing idealTree:node_modules/newman/node_modules/serialised-error/node_modules/uuid Completed in 0ms
+510 timing idealTree:buildDeps Completed in 8829ms
+511 timing idealTree:fixDepFlags Completed in 2ms
+512 timing idealTree Completed in 8837ms
+513 timing reify:loadTrees Completed in 8838ms
+514 timing reify:diffTrees Completed in 1ms
+515 silly reify moves {}
+516 timing reify:retireShallow Completed in 0ms
+517 timing reify:createSparse Completed in 14ms
+518 timing reify:loadBundles Completed in 0ms
+519 silly audit bulk request {
+519 silly audit   newman: [ '5.3.2' ],
+519 silly audit   'newman-reporter-allure': [ '1.0.7' ],
+519 silly audit   async: [ '3.2.3' ],
+519 silly audit   chardet: [ '1.4.0' ],
+519 silly audit   'cli-progress': [ '3.10.0' ],
+519 silly audit   'cli-table3': [ '0.6.1' ],
+519 silly audit   colors: [ '1.4.0' ],
+519 silly audit   commander: [ '7.2.0', '8.3.0' ],
+519 silly audit   'csv-parse': [ '4.16.3' ],
+519 silly audit   eventemitter3: [ '4.0.7' ],
+519 silly audit   filesize: [ '8.0.7' ],
+519 silly audit   lodash: [ '4.17.21' ],
+519 silly audit   mkdirp: [ '1.0.4' ],
+519 silly audit   'postman-collection': [ '4.1.1' ],
+519 silly audit   'postman-collection-transformer': [ '4.1.6' ],
+519 silly audit   'postman-request': [ '2.88.1-postman.31' ],
+519 silly audit   'postman-runtime': [ '7.29.0' ],
+519 silly audit   'pretty-ms': [ '7.0.1' ],
+519 silly audit   semver: [ '7.3.5' ],
+519 silly audit   'serialised-error': [ '1.1.3' ],
+519 silly audit   'tough-cookie': [ '3.0.1', '2.5.0' ],
+519 silly audit   'word-wrap': [ '1.2.3' ],
+519 silly audit   xmlbuilder: [ '15.1.1' ],
+519 silly audit   'allure-js-commons': [ '2.0.0-beta.19' ],
+519 silly audit   properties: [ '1.2.1' ],
+519 silly audit   uuid: [ '8.3.2', '3.4.0' ],
+519 silly audit   'string-width': [ '4.2.3' ],
+519 silly audit   faker: [ '5.5.3' ],
+519 silly audit   'file-type': [ '3.9.0' ],
+519 silly audit   'http-reasons': [ '0.1.0' ],
+519 silly audit   'iconv-lite': [ '0.6.3' ],
+519 silly audit   'liquid-json': [ '0.3.1' ],
+519 silly audit   'mime-format': [ '2.0.1' ],
+519 silly audit   'mime-types': [ '2.1.34' ],
+519 silly audit   'postman-url-encoder': [ '3.0.5' ],
+519 silly audit   'safer-buffer': [ '2.1.2' ],
+519 silly audit   charset: [ '1.0.1' ],
+519 silly audit   'mime-db': [ '1.51.0' ],
+519 silly audit   inherits: [ '2.0.4' ],
+519 silly audit   'strip-json-comments': [ '3.1.1' ],
+519 silly audit   '@postman/form-data': [ '3.1.1' ],
+519 silly audit   '@postman/tunnel-agent': [ '0.6.3' ],
+519 silly audit   'aws-sign2': [ '0.7.0' ],
+519 silly audit   aws4: [ '1.11.0' ],
+519 silly audit   brotli: [ '1.3.3' ],
+519 silly audit   caseless: [ '0.12.0' ],
+519 silly audit   'combined-stream': [ '1.0.8' ],
+519 silly audit   extend: [ '3.0.2' ],
+519 silly audit   'forever-agent': [ '0.6.1' ],
+519 silly audit   'har-validator': [ '5.1.5' ],
+519 silly audit   'http-signature': [ '1.3.6' ],
+519 silly audit   'is-typedarray': [ '1.0.0' ],
+519 silly audit   isstream: [ '0.1.2' ],
+519 silly audit   'json-stringify-safe': [ '5.0.1' ],
+519 silly audit   'oauth-sign': [ '0.9.0' ],
+519 silly audit   'performance-now': [ '2.1.0' ],
+519 silly audit   qs: [ '6.5.3' ],
+519 silly audit   'safe-buffer': [ '5.2.1' ],
+519 silly audit   'stream-length': [ '1.0.2' ],
+519 silly audit   asynckit: [ '0.4.0' ],
+519 silly audit   'base64-js': [ '1.5.1' ],
+519 silly audit   'delayed-stream': [ '1.0.0' ],
+519 silly audit   ajv: [ '6.12.6' ],
+519 silly audit   'har-schema': [ '2.0.0' ],
+519 silly audit   'fast-deep-equal': [ '3.1.3' ],
+519 silly audit   'fast-json-stable-stringify': [ '2.1.0' ],
+519 silly audit   'json-schema-traverse': [ '0.4.1' ],
+519 silly audit   'uri-js': [ '4.4.1' ],
+519 silly audit   'assert-plus': [ '1.0.0' ],
+519 silly audit   jsprim: [ '2.0.2' ],
+519 silly audit   sshpk: [ '1.17.0' ],
+519 silly audit   extsprintf: [ '1.3.0' ],
+519 silly audit   'json-schema': [ '0.4.0' ],
+519 silly audit   verror: [ '1.10.0' ],
+519 silly audit   handlebars: [ '4.7.7' ],
+519 silly audit   httpntlm: [ '1.7.7' ],
+519 silly audit   'js-sha512': [ '0.8.0' ],
+519 silly audit   'node-oauth1': [ '1.3.0' ],
+519 silly audit   'postman-sandbox': [ '4.0.6' ],
+519 silly audit   minimist: [ '1.2.7' ],
+519 silly audit   'neo-async': [ '2.6.2' ],
+519 silly audit   'source-map': [ '0.6.1' ],
+519 silly audit   'uglify-js': [ '3.17.4' ],
+519 silly audit   wordwrap: [ '1.0.0' ],
+519 silly audit   httpreq: [ '0.5.2' ],
+519 silly audit   underscore: [ '1.12.1' ],
+519 silly audit   'teleport-javascript': [ '1.0.0' ],
+519 silly audit   uvm: [ '2.0.2' ],
+519 silly audit   punycode: [ '2.1.1' ],
+519 silly audit   'parse-ms': [ '2.1.0' ],
+519 silly audit   'lru-cache': [ '6.0.0' ],
+519 silly audit   yallist: [ '4.0.0' ],
+519 silly audit   'object-hash': [ '1.3.1' ],
+519 silly audit   'stack-trace': [ '0.0.9' ],
+519 silly audit   asn1: [ '0.2.6' ],
+519 silly audit   'bcrypt-pbkdf': [ '1.0.2' ],
+519 silly audit   dashdash: [ '1.14.1' ],
+519 silly audit   'ecc-jsbn': [ '0.1.2' ],
+519 silly audit   getpass: [ '0.1.7' ],
+519 silly audit   jsbn: [ '0.1.1' ],
+519 silly audit   tweetnacl: [ '0.14.5' ],
+519 silly audit   bluebird: [ '2.11.0' ],
+519 silly audit   'emoji-regex': [ '8.0.0' ],
+519 silly audit   'is-fullwidth-code-point': [ '3.0.0' ],
+519 silly audit   'strip-ansi': [ '6.0.1' ],
+519 silly audit   'ansi-regex': [ '5.0.1' ],
+519 silly audit   'ip-regex': [ '2.1.0' ],
+519 silly audit   psl: [ '1.9.0' ],
+519 silly audit   flatted: [ '3.1.1' ],
+519 silly audit   'core-util-is': [ '1.0.2' ]
+519 silly audit }
+520 silly tarball no local data for newman-reporter-allure@https://registry.npmjs.org/newman-reporter-allure/-/newman-reporter-allure-1.0.7.tgz. Extracting by manifest.
+521 silly tarball no local data for mkdirp@https://registry.npmjs.org/mkdirp/-/mkdirp-1.0.4.tgz. Extracting by manifest.
+522 silly tarball no local data for uuid@https://registry.npmjs.org/uuid/-/uuid-8.3.2.tgz. Extracting by manifest.
+523 silly tarball no local data for properties@https://registry.npmjs.org/properties/-/properties-1.2.1.tgz. Extracting by manifest.
+524 silly tarball no local data for newman@https://registry.npmjs.org/newman/-/newman-5.3.2.tgz. Extracting by manifest.
+525 silly tarball no local data for allure-js-commons@https://registry.npmjs.org/allure-js-commons/-/allure-js-commons-2.0.0-beta.19.tgz. Extracting by manifest.
+526 silly tarball no local data for core-util-is@https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.2.tgz. Extracting by manifest.
+527 silly tarball no local data for lodash@https://registry.npmjs.org/lodash/-/lodash-4.17.21.tgz. Extracting by manifest.
+528 silly tarball no local data for psl@https://registry.npmjs.org/psl/-/psl-1.9.0.tgz. Extracting by manifest.
+529 silly tarball no local data for flatted@https://registry.npmjs.org/flatted/-/flatted-3.1.1.tgz. Extracting by manifest.
+530 silly tarball no local data for ip-regex@https://registry.npmjs.org/ip-regex/-/ip-regex-2.1.0.tgz. Extracting by manifest.
+531 silly tarball no local data for ansi-regex@https://registry.npmjs.org/ansi-regex/-/ansi-regex-5.0.1.tgz. Extracting by manifest.
+532 silly tarball no local data for strip-ansi@https://registry.npmjs.org/strip-ansi/-/strip-ansi-6.0.1.tgz. Extracting by manifest.
+533 silly tarball no local data for emoji-regex@https://registry.npmjs.org/emoji-regex/-/emoji-regex-8.0.0.tgz. Extracting by manifest.
+534 silly tarball no local data for is-fullwidth-code-point@https://registry.npmjs.org/is-fullwidth-code-point/-/is-fullwidth-code-point-3.0.0.tgz. Extracting by manifest.
+535 silly tarball no local data for bluebird@https://registry.npmjs.org/bluebird/-/bluebird-2.11.0.tgz. Extracting by manifest.
+536 silly tarball no local data for tweetnacl@https://registry.npmjs.org/tweetnacl/-/tweetnacl-0.14.5.tgz. Extracting by manifest.
+537 silly tarball no local data for jsbn@https://registry.npmjs.org/jsbn/-/jsbn-0.1.1.tgz. Extracting by manifest.
+538 silly tarball no local data for getpass@https://registry.npmjs.org/getpass/-/getpass-0.1.7.tgz. Extracting by manifest.
+539 silly tarball no local data for ecc-jsbn@https://registry.npmjs.org/ecc-jsbn/-/ecc-jsbn-0.1.2.tgz. Extracting by manifest.
+540 silly tarball no local data for dashdash@https://registry.npmjs.org/dashdash/-/dashdash-1.14.1.tgz. Extracting by manifest.
+541 silly tarball no local data for bcrypt-pbkdf@https://registry.npmjs.org/bcrypt-pbkdf/-/bcrypt-pbkdf-1.0.2.tgz. Extracting by manifest.
+542 silly tarball no local data for asn1@https://registry.npmjs.org/asn1/-/asn1-0.2.6.tgz. Extracting by manifest.
+543 silly tarball no local data for stack-trace@https://registry.npmjs.org/stack-trace/-/stack-trace-0.0.9.tgz. Extracting by manifest.
+544 silly tarball no local data for object-hash@https://registry.npmjs.org/object-hash/-/object-hash-1.3.1.tgz. Extracting by manifest.
+545 silly tarball no local data for yallist@https://registry.npmjs.org/yallist/-/yallist-4.0.0.tgz. Extracting by manifest.
+546 silly tarball no local data for lru-cache@https://registry.npmjs.org/lru-cache/-/lru-cache-6.0.0.tgz. Extracting by manifest.
+547 silly tarball no local data for parse-ms@https://registry.npmjs.org/parse-ms/-/parse-ms-2.1.0.tgz. Extracting by manifest.
+548 silly tarball no local data for punycode@https://registry.npmjs.org/punycode/-/punycode-2.1.1.tgz. Extracting by manifest.
+549 silly tarball no local data for uvm@https://registry.npmjs.org/uvm/-/uvm-2.0.2.tgz. Extracting by manifest.
+550 silly tarball no local data for teleport-javascript@https://registry.npmjs.org/teleport-javascript/-/teleport-javascript-1.0.0.tgz. Extracting by manifest.
+551 silly tarball no local data for underscore@https://registry.npmjs.org/underscore/-/underscore-1.12.1.tgz. Extracting by manifest.
+552 silly tarball no local data for httpreq@https://registry.npmjs.org/httpreq/-/httpreq-0.5.2.tgz. Extracting by manifest.
+553 silly tarball no local data for wordwrap@https://registry.npmjs.org/wordwrap/-/wordwrap-1.0.0.tgz. Extracting by manifest.
+554 silly tarball no local data for uglify-js@https://registry.npmjs.org/uglify-js/-/uglify-js-3.17.4.tgz. Extracting by manifest.
+555 silly tarball no local data for source-map@https://registry.npmjs.org/source-map/-/source-map-0.6.1.tgz. Extracting by manifest.
+556 silly tarball no local data for neo-async@https://registry.npmjs.org/neo-async/-/neo-async-2.6.2.tgz. Extracting by manifest.
+557 silly tarball no local data for minimist@https://registry.npmjs.org/minimist/-/minimist-1.2.7.tgz. Extracting by manifest.
+558 silly tarball no local data for node-oauth1@https://registry.npmjs.org/node-oauth1/-/node-oauth1-1.3.0.tgz. Extracting by manifest.
+559 silly tarball no local data for postman-sandbox@https://registry.npmjs.org/postman-sandbox/-/postman-sandbox-4.0.6.tgz. Extracting by manifest.
+560 silly tarball no local data for js-sha512@https://registry.npmjs.org/js-sha512/-/js-sha512-0.8.0.tgz. Extracting by manifest.
+561 silly tarball no local data for httpntlm@https://registry.npmjs.org/httpntlm/-/httpntlm-1.7.7.tgz. Extracting by manifest.
+562 silly tarball no local data for handlebars@https://registry.npmjs.org/handlebars/-/handlebars-4.7.7.tgz. Extracting by manifest.
+563 silly tarball no local data for verror@https://registry.npmjs.org/verror/-/verror-1.10.0.tgz. Extracting by manifest.
+564 silly tarball no local data for extsprintf@https://registry.npmjs.org/extsprintf/-/extsprintf-1.3.0.tgz. Extracting by manifest.
+565 silly tarball no local data for json-schema@https://registry.npmjs.org/json-schema/-/json-schema-0.4.0.tgz. Extracting by manifest.
+566 silly tarball no local data for sshpk@https://registry.npmjs.org/sshpk/-/sshpk-1.17.0.tgz. Extracting by manifest.
+567 silly tarball no local data for jsprim@https://registry.npmjs.org/jsprim/-/jsprim-2.0.2.tgz. Extracting by manifest.
+568 silly tarball no local data for assert-plus@https://registry.npmjs.org/assert-plus/-/assert-plus-1.0.0.tgz. Extracting by manifest.
+569 silly tarball no local data for uri-js@https://registry.npmjs.org/uri-js/-/uri-js-4.4.1.tgz. Extracting by manifest.
+570 silly tarball no local data for json-schema-traverse@https://registry.npmjs.org/json-schema-traverse/-/json-schema-traverse-0.4.1.tgz. Extracting by manifest.
+571 silly tarball no local data for fast-deep-equal@https://registry.npmjs.org/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz. Extracting by manifest.
+572 silly tarball no local data for fast-json-stable-stringify@https://registry.npmjs.org/fast-json-stable-stringify/-/fast-json-stable-stringify-2.1.0.tgz. Extracting by manifest.
+573 silly tarball no local data for har-schema@https://registry.npmjs.org/har-schema/-/har-schema-2.0.0.tgz. Extracting by manifest.
+574 silly tarball no local data for ajv@https://registry.npmjs.org/ajv/-/ajv-6.12.6.tgz. Extracting by manifest.
+575 silly tarball no local data for delayed-stream@https://registry.npmjs.org/delayed-stream/-/delayed-stream-1.0.0.tgz. Extracting by manifest.
+576 silly tarball no local data for base64-js@https://registry.npmjs.org/base64-js/-/base64-js-1.5.1.tgz. Extracting by manifest.
+577 silly tarball no local data for asynckit@https://registry.npmjs.org/asynckit/-/asynckit-0.4.0.tgz. Extracting by manifest.
+578 silly tarball no local data for stream-length@https://registry.npmjs.org/stream-length/-/stream-length-1.0.2.tgz. Extracting by manifest.
+579 silly tarball no local data for safe-buffer@https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.2.1.tgz. Extracting by manifest.
+580 silly tarball no local data for qs@https://registry.npmjs.org/qs/-/qs-6.5.3.tgz. Extracting by manifest.
+581 silly tarball no local data for isstream@https://registry.npmjs.org/isstream/-/isstream-0.1.2.tgz. Extracting by manifest.
+582 silly tarball no local data for performance-now@https://registry.npmjs.org/performance-now/-/performance-now-2.1.0.tgz. Extracting by manifest.
+583 silly tarball no local data for is-typedarray@https://registry.npmjs.org/is-typedarray/-/is-typedarray-1.0.0.tgz. Extracting by manifest.
+584 silly tarball no local data for oauth-sign@https://registry.npmjs.org/oauth-sign/-/oauth-sign-0.9.0.tgz. Extracting by manifest.
+585 silly tarball no local data for http-signature@https://registry.npmjs.org/http-signature/-/http-signature-1.3.6.tgz. Extracting by manifest.
+586 silly tarball no local data for har-validator@https://registry.npmjs.org/har-validator/-/har-validator-5.1.5.tgz. Extracting by manifest.
+587 silly tarball no local data for extend@https://registry.npmjs.org/extend/-/extend-3.0.2.tgz. Extracting by manifest.
+588 silly tarball no local data for forever-agent@https://registry.npmjs.org/forever-agent/-/forever-agent-0.6.1.tgz. Extracting by manifest.
+589 silly tarball no local data for json-stringify-safe@https://registry.npmjs.org/json-stringify-safe/-/json-stringify-safe-5.0.1.tgz. Extracting by manifest.
+590 silly tarball no local data for combined-stream@https://registry.npmjs.org/combined-stream/-/combined-stream-1.0.8.tgz. Extracting by manifest.
+591 silly tarball no local data for brotli@https://registry.npmjs.org/brotli/-/brotli-1.3.3.tgz. Extracting by manifest.
+592 silly tarball no local data for caseless@https://registry.npmjs.org/caseless/-/caseless-0.12.0.tgz. Extracting by manifest.
+593 silly tarball no local data for aws4@https://registry.npmjs.org/aws4/-/aws4-1.11.0.tgz. Extracting by manifest.
+594 silly tarball no local data for aws-sign2@https://registry.npmjs.org/aws-sign2/-/aws-sign2-0.7.0.tgz. Extracting by manifest.
+595 silly tarball no local data for @postman/form-data@https://registry.npmjs.org/@postman/form-data/-/form-data-3.1.1.tgz. Extracting by manifest.
+596 silly tarball no local data for @postman/tunnel-agent@https://registry.npmjs.org/@postman/tunnel-agent/-/tunnel-agent-0.6.3.tgz. Extracting by manifest.
+597 silly tarball no local data for strip-json-comments@https://registry.npmjs.org/strip-json-comments/-/strip-json-comments-3.1.1.tgz. Extracting by manifest.
+598 silly tarball no local data for inherits@https://registry.npmjs.org/inherits/-/inherits-2.0.4.tgz. Extracting by manifest.
+599 silly tarball no local data for mime-db@https://registry.npmjs.org/mime-db/-/mime-db-1.51.0.tgz. Extracting by manifest.
+600 silly tarball no local data for charset@https://registry.npmjs.org/charset/-/charset-1.0.1.tgz. Extracting by manifest.
+601 silly tarball no local data for safer-buffer@https://registry.npmjs.org/safer-buffer/-/safer-buffer-2.1.2.tgz. Extracting by manifest.
+602 silly tarball no local data for uuid@https://registry.npmjs.org/uuid/-/uuid-8.3.2.tgz. Extracting by manifest.
+603 silly tarball no local data for postman-url-encoder@https://registry.npmjs.org/postman-url-encoder/-/postman-url-encoder-3.0.5.tgz. Extracting by manifest.
+604 silly tarball no local data for mime-types@https://registry.npmjs.org/mime-types/-/mime-types-2.1.34.tgz. Extracting by manifest.
+605 silly tarball no local data for mime-format@https://registry.npmjs.org/mime-format/-/mime-format-2.0.1.tgz. Extracting by manifest.
+606 silly tarball no local data for liquid-json@https://registry.npmjs.org/liquid-json/-/liquid-json-0.3.1.tgz. Extracting by manifest.
+607 silly tarball no local data for iconv-lite@https://registry.npmjs.org/iconv-lite/-/iconv-lite-0.6.3.tgz. Extracting by manifest.
+608 silly tarball no local data for http-reasons@https://registry.npmjs.org/http-reasons/-/http-reasons-0.1.0.tgz. Extracting by manifest.
+609 silly tarball no local data for file-type@https://registry.npmjs.org/file-type/-/file-type-3.9.0.tgz. Extracting by manifest.
+610 silly tarball no local data for faker@https://registry.npmjs.org/faker/-/faker-5.5.3.tgz. Extracting by manifest.
+611 silly tarball no local data for string-width@https://registry.npmjs.org/string-width/-/string-width-4.2.3.tgz. Extracting by manifest.
+612 silly tarball no local data for xmlbuilder@https://registry.npmjs.org/xmlbuilder/-/xmlbuilder-15.1.1.tgz. Extracting by manifest.
+613 silly tarball no local data for word-wrap@https://registry.npmjs.org/word-wrap/-/word-wrap-1.2.3.tgz. Extracting by manifest.
+614 silly tarball no local data for tough-cookie@https://registry.npmjs.org/tough-cookie/-/tough-cookie-3.0.1.tgz. Extracting by manifest.
+615 silly tarball no local data for serialised-error@https://registry.npmjs.org/serialised-error/-/serialised-error-1.1.3.tgz. Extracting by manifest.
+616 silly tarball no local data for uuid@https://registry.npmjs.org/uuid/-/uuid-3.4.0.tgz. Extracting by manifest.
+617 silly tarball no local data for semver@https://registry.npmjs.org/semver/-/semver-7.3.5.tgz. Extracting by manifest.
+618 silly tarball no local data for pretty-ms@https://registry.npmjs.org/pretty-ms/-/pretty-ms-7.0.1.tgz. Extracting by manifest.
+619 silly tarball no local data for postman-runtime@https://registry.npmjs.org/postman-runtime/-/postman-runtime-7.29.0.tgz. Extracting by manifest.
+620 silly tarball no local data for postman-request@https://registry.npmjs.org/postman-request/-/postman-request-2.88.1-postman.31.tgz. Extracting by manifest.
+621 silly tarball no local data for uuid@https://registry.npmjs.org/uuid/-/uuid-3.4.0.tgz. Extracting by manifest.
+622 silly tarball no local data for tough-cookie@https://registry.npmjs.org/tough-cookie/-/tough-cookie-2.5.0.tgz. Extracting by manifest.
+623 silly tarball no local data for postman-collection-transformer@https://registry.npmjs.org/postman-collection-transformer/-/postman-collection-transformer-4.1.6.tgz. Extracting by manifest.
+624 silly tarball no local data for commander@https://registry.npmjs.org/commander/-/commander-8.3.0.tgz. Extracting by manifest.
+625 silly tarball no local data for postman-collection@https://registry.npmjs.org/postman-collection/-/postman-collection-4.1.1.tgz. Extracting by manifest.
+626 silly tarball no local data for lodash@https://registry.npmjs.org/lodash/-/lodash-4.17.21.tgz. Extracting by manifest.
+627 silly tarball no local data for mkdirp@https://registry.npmjs.org/mkdirp/-/mkdirp-1.0.4.tgz. Extracting by manifest.
+628 silly tarball no local data for filesize@https://registry.npmjs.org/filesize/-/filesize-8.0.7.tgz. Extracting by manifest.
+629 silly tarball no local data for eventemitter3@https://registry.npmjs.org/eventemitter3/-/eventemitter3-4.0.7.tgz. Extracting by manifest.
+630 silly tarball no local data for csv-parse@https://registry.npmjs.org/csv-parse/-/csv-parse-4.16.3.tgz. Extracting by manifest.
+631 silly tarball no local data for commander@https://registry.npmjs.org/commander/-/commander-7.2.0.tgz. Extracting by manifest.
+632 silly tarball no local data for colors@https://registry.npmjs.org/colors/-/colors-1.4.0.tgz. Extracting by manifest.
+633 silly tarball no local data for cli-table3@https://registry.npmjs.org/cli-table3/-/cli-table3-0.6.1.tgz. Extracting by manifest.
+634 silly tarball no local data for cli-progress@https://registry.npmjs.org/cli-progress/-/cli-progress-3.10.0.tgz. Extracting by manifest.
+635 silly tarball no local data for chardet@https://registry.npmjs.org/chardet/-/chardet-1.4.0.tgz. Extracting by manifest.
+636 silly tarball no local data for async@https://registry.npmjs.org/async/-/async-3.2.3.tgz. Extracting by manifest.
+637 http fetch GET 200 https://registry.npmjs.org/mkdirp/-/mkdirp-1.0.4.tgz 200ms (cache miss)
+638 timing reifyNode:node_modules/newman-reporter-allure/node_modules/mkdirp Completed in 229ms
+639 http fetch GET 200 https://registry.npmjs.org/ansi-regex/-/ansi-regex-5.0.1.tgz 203ms (cache miss)
+640 timing reifyNode:node_modules/newman/node_modules/ansi-regex Completed in 239ms
+641 http fetch GET 200 https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.2.tgz 209ms (cache miss)
+642 timing reifyNode:node_modules/newman/node_modules/core-util-is Completed in 240ms
+643 http fetch GET 200 https://registry.npmjs.org/strip-ansi/-/strip-ansi-6.0.1.tgz 218ms (cache miss)
+644 timing reifyNode:node_modules/newman/node_modules/strip-ansi Completed in 255ms
+645 http fetch GET 200 https://registry.npmjs.org/is-fullwidth-code-point/-/is-fullwidth-code-point-3.0.0.tgz 217ms (cache miss)
+646 timing reifyNode:node_modules/newman/node_modules/is-fullwidth-code-point Completed in 255ms
+647 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 259ms
+648 timing auditReport:getReport Completed in 261ms
+649 silly audit report {}
+650 timing auditReport:init Completed in 0ms
+651 timing reify:audit Completed in 262ms
+652 http fetch GET 200 https://registry.npmjs.org/ip-regex/-/ip-regex-2.1.0.tgz 231ms (cache miss)
+653 timing reifyNode:node_modules/newman/node_modules/ip-regex Completed in 266ms
+654 http fetch GET 200 https://registry.npmjs.org/emoji-regex/-/emoji-regex-8.0.0.tgz 229ms (cache miss)
+655 timing reifyNode:node_modules/newman/node_modules/emoji-regex Completed in 267ms
+656 http fetch GET 200 https://registry.npmjs.org/properties/-/properties-1.2.1.tgz 244ms (cache miss)
+657 timing reifyNode:node_modules/newman-reporter-allure/node_modules/properties Completed in 273ms
+658 http fetch GET 200 https://registry.npmjs.org/bcrypt-pbkdf/-/bcrypt-pbkdf-1.0.2.tgz 268ms (cache miss)
+659 timing reifyNode:node_modules/newman/node_modules/bcrypt-pbkdf Completed in 309ms
+660 http fetch GET 200 https://registry.npmjs.org/parse-ms/-/parse-ms-2.1.0.tgz 273ms (cache miss)
+661 timing reifyNode:node_modules/newman/node_modules/parse-ms Completed in 322ms
+662 http fetch GET 200 https://registry.npmjs.org/getpass/-/getpass-0.1.7.tgz 288ms (cache miss)
+663 timing reifyNode:node_modules/newman/node_modules/getpass Completed in 328ms
+664 http fetch GET 200 https://registry.npmjs.org/asn1/-/asn1-0.2.6.tgz 286ms (cache miss)
+665 timing reifyNode:node_modules/newman/node_modules/asn1 Completed in 328ms
+666 http fetch GET 200 https://registry.npmjs.org/tweetnacl/-/tweetnacl-0.14.5.tgz 297ms (cache miss)
+667 http fetch GET 200 https://registry.npmjs.org/ecc-jsbn/-/ecc-jsbn-0.1.2.tgz 295ms (cache miss)
+668 timing reifyNode:node_modules/newman/node_modules/ecc-jsbn Completed in 335ms
+669 timing reifyNode:node_modules/newman/node_modules/tweetnacl Completed in 344ms
+670 http fetch GET 200 https://registry.npmjs.org/jsbn/-/jsbn-0.1.1.tgz 305ms (cache miss)
+671 timing reifyNode:node_modules/newman/node_modules/jsbn Completed in 344ms
+672 http fetch GET 200 https://registry.npmjs.org/stack-trace/-/stack-trace-0.0.9.tgz 301ms (cache miss)
+673 timing reifyNode:node_modules/newman/node_modules/stack-trace Completed in 344ms
+674 http fetch GET 200 https://registry.npmjs.org/newman-reporter-allure/-/newman-reporter-allure-1.0.7.tgz 320ms (cache miss)
+675 timing reifyNode:node_modules/newman-reporter-allure Completed in 347ms
+676 http fetch GET 200 https://registry.npmjs.org/yallist/-/yallist-4.0.0.tgz 303ms (cache miss)
+677 timing reifyNode:node_modules/newman/node_modules/yallist Completed in 347ms
+678 http fetch GET 200 https://registry.npmjs.org/dashdash/-/dashdash-1.14.1.tgz 317ms (cache miss)
+679 timing reifyNode:node_modules/newman/node_modules/dashdash Completed in 358ms
+680 http fetch GET 200 https://registry.npmjs.org/uvm/-/uvm-2.0.2.tgz 308ms (cache miss)
+681 timing reifyNode:node_modules/newman/node_modules/uvm Completed in 358ms
+682 http fetch GET 200 https://registry.npmjs.org/teleport-javascript/-/teleport-javascript-1.0.0.tgz 322ms (cache miss)
+683 http fetch GET 200 https://registry.npmjs.org/flatted/-/flatted-3.1.1.tgz 350ms (cache miss)
+684 timing reifyNode:node_modules/newman/node_modules/teleport-javascript Completed in 385ms
+685 http fetch GET 200 https://registry.npmjs.org/httpreq/-/httpreq-0.5.2.tgz 338ms (cache miss)
+686 timing reifyNode:node_modules/newman/node_modules/httpreq Completed in 389ms
+687 http fetch GET 200 https://registry.npmjs.org/punycode/-/punycode-2.1.1.tgz 340ms (cache miss)
+688 timing reifyNode:node_modules/newman/node_modules/punycode Completed in 389ms
+689 http fetch GET 200 https://registry.npmjs.org/lru-cache/-/lru-cache-6.0.0.tgz 342ms (cache miss)
+690 timing reifyNode:node_modules/newman/node_modules/lru-cache Completed in 389ms
+691 http fetch GET 200 https://registry.npmjs.org/wordwrap/-/wordwrap-1.0.0.tgz 338ms (cache miss)
+692 timing reifyNode:node_modules/newman/node_modules/wordwrap Completed in 390ms
+693 http fetch GET 200 https://registry.npmjs.org/verror/-/verror-1.10.0.tgz 330ms (cache miss)
+694 timing reifyNode:node_modules/newman/node_modules/verror Completed in 390ms
+695 http fetch GET 200 https://registry.npmjs.org/minimist/-/minimist-1.2.7.tgz 340ms (cache miss)
+696 http fetch GET 200 https://registry.npmjs.org/extsprintf/-/extsprintf-1.3.0.tgz 334ms (cache miss)
+697 timing reifyNode:node_modules/newman/node_modules/extsprintf Completed in 395ms
+698 timing reifyNode:node_modules/newman/node_modules/flatted Completed in 398ms
+699 http fetch GET 200 https://registry.npmjs.org/httpntlm/-/httpntlm-1.7.7.tgz 341ms (cache miss)
+700 timing reifyNode:node_modules/newman/node_modules/httpntlm Completed in 398ms
+701 http fetch GET 200 https://registry.npmjs.org/json-schema-traverse/-/json-schema-traverse-0.4.1.tgz 333ms (cache miss)
+702 http fetch GET 200 https://registry.npmjs.org/jsprim/-/jsprim-2.0.2.tgz 340ms (cache miss)
+703 timing reifyNode:node_modules/newman/node_modules/jsprim Completed in 404ms
+704 timing reifyNode:node_modules/newman/node_modules/json-schema-traverse Completed in 404ms
+705 http fetch GET 200 https://registry.npmjs.org/node-oauth1/-/node-oauth1-1.3.0.tgz 353ms (cache miss)
+706 timing reifyNode:node_modules/newman/node_modules/node-oauth1 Completed in 414ms
+707 http fetch GET 200 https://registry.npmjs.org/json-schema/-/json-schema-0.4.0.tgz 352ms (cache miss)
+708 timing reifyNode:node_modules/newman/node_modules/json-schema Completed in 414ms
+709 http fetch GET 200 https://registry.npmjs.org/base64-js/-/base64-js-1.5.1.tgz 347ms (cache miss)
+710 timing reifyNode:node_modules/newman/node_modules/base64-js Completed in 415ms
+711 http fetch GET 200 https://registry.npmjs.org/js-sha512/-/js-sha512-0.8.0.tgz 367ms (cache miss)
+712 timing reifyNode:node_modules/newman/node_modules/js-sha512 Completed in 423ms
+713 http fetch GET 200 https://registry.npmjs.org/fast-json-stable-stringify/-/fast-json-stable-stringify-2.1.0.tgz 357ms (cache miss)
+714 http fetch GET 200 https://registry.npmjs.org/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz 359ms (cache miss)
+715 timing reifyNode:node_modules/newman/node_modules/fast-deep-equal Completed in 424ms
+716 http fetch GET 200 https://registry.npmjs.org/assert-plus/-/assert-plus-1.0.0.tgz 360ms (cache miss)
+717 timing reifyNode:node_modules/newman/node_modules/assert-plus Completed in 424ms
+718 http fetch GET 200 https://registry.npmjs.org/delayed-stream/-/delayed-stream-1.0.0.tgz 361ms (cache miss)
+719 timing reifyNode:node_modules/newman/node_modules/delayed-stream Completed in 429ms
+720 http fetch GET 200 https://registry.npmjs.org/psl/-/psl-1.9.0.tgz 400ms (cache miss)
+721 timing reifyNode:node_modules/newman/node_modules/psl Completed in 434ms
+722 http fetch GET 200 https://registry.npmjs.org/asynckit/-/asynckit-0.4.0.tgz 369ms (cache miss)
+723 http fetch GET 200 https://registry.npmjs.org/har-schema/-/har-schema-2.0.0.tgz 373ms (cache miss)
+724 http fetch GET 200 https://registry.npmjs.org/stream-length/-/stream-length-1.0.2.tgz 372ms (cache miss)
+725 timing reifyNode:node_modules/newman/node_modules/stream-length Completed in 441ms
+726 http fetch GET 200 https://registry.npmjs.org/json-stringify-safe/-/json-stringify-safe-5.0.1.tgz 360ms (cache miss)
+727 timing reifyNode:node_modules/newman/node_modules/json-stringify-safe Completed in 444ms
+728 http fetch GET 200 https://registry.npmjs.org/isstream/-/isstream-0.1.2.tgz 371ms (cache miss)
+729 timing reifyNode:node_modules/newman/node_modules/isstream Completed in 448ms
+730 http fetch GET 200 https://registry.npmjs.org/oauth-sign/-/oauth-sign-0.9.0.tgz 368ms (cache miss)
+731 timing reifyNode:node_modules/newman/node_modules/oauth-sign Completed in 448ms
+732 timing reifyNode:node_modules/newman/node_modules/fast-json-stable-stringify Completed in 463ms
+733 http fetch GET 200 https://registry.npmjs.org/http-signature/-/http-signature-1.3.6.tgz 383ms (cache miss)
+734 timing reifyNode:node_modules/newman/node_modules/http-signature Completed in 463ms
+735 http fetch GET 200 https://registry.npmjs.org/combined-stream/-/combined-stream-1.0.8.tgz 379ms (cache miss)
+736 timing reifyNode:node_modules/newman/node_modules/combined-stream Completed in 463ms
+737 http fetch GET 200 https://registry.npmjs.org/har-validator/-/har-validator-5.1.5.tgz 418ms (cache miss)
+738 warn deprecated har-validator@5.1.5: this library is no longer supported
+739 timing reifyNode:node_modules/newman/node_modules/har-validator Completed in 499ms
+740 timing reifyNode:node_modules/newman/node_modules/asynckit Completed in 499ms
+741 http fetch GET 200 https://registry.npmjs.org/performance-now/-/performance-now-2.1.0.tgz 421ms (cache miss)
+742 http fetch GET 200 https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.2.1.tgz 425ms (cache miss)
+743 timing reifyNode:node_modules/newman/node_modules/safe-buffer Completed in 500ms
+744 http fetch GET 200 https://registry.npmjs.org/caseless/-/caseless-0.12.0.tgz 414ms (cache miss)
+745 timing reifyNode:node_modules/newman/node_modules/caseless Completed in 500ms
+746 http fetch GET 200 https://registry.npmjs.org/forever-agent/-/forever-agent-0.6.1.tgz 417ms (cache miss)
+747 timing reifyNode:node_modules/newman/node_modules/forever-agent Completed in 500ms
+748 http fetch GET 200 https://registry.npmjs.org/is-typedarray/-/is-typedarray-1.0.0.tgz 427ms (cache miss)
+749 timing reifyNode:node_modules/newman/node_modules/is-typedarray Completed in 507ms
+750 timing reifyNode:node_modules/newman/node_modules/minimist Completed in 511ms
+751 timing reifyNode:node_modules/newman/node_modules/har-schema Completed in 512ms
+752 http fetch GET 200 https://registry.npmjs.org/aws-sign2/-/aws-sign2-0.7.0.tgz 425ms (cache miss)
+753 timing reifyNode:node_modules/newman/node_modules/aws-sign2 Completed in 512ms
+754 timing reifyNode:node_modules/newman/node_modules/performance-now Completed in 519ms
+755 http fetch GET 200 https://registry.npmjs.org/extend/-/extend-3.0.2.tgz 437ms (cache miss)
+756 timing reifyNode:node_modules/newman/node_modules/extend Completed in 519ms
+757 http fetch GET 200 https://registry.npmjs.org/safer-buffer/-/safer-buffer-2.1.2.tgz 423ms (cache miss)
+758 timing reifyNode:node_modules/newman/node_modules/safer-buffer Completed in 518ms
+759 http fetch GET 200 https://registry.npmjs.org/aws4/-/aws4-1.11.0.tgz 443ms (cache miss)
+760 timing reifyNode:node_modules/newman/node_modules/aws4 Completed in 529ms
+761 http fetch GET 200 https://registry.npmjs.org/mime-types/-/mime-types-2.1.34.tgz 438ms (cache miss)
+762 timing reifyNode:node_modules/newman/node_modules/mime-types Completed in 537ms
+763 http fetch GET 200 https://registry.npmjs.org/strip-json-comments/-/strip-json-comments-3.1.1.tgz 453ms (cache miss)
+764 timing reifyNode:node_modules/newman/node_modules/strip-json-comments Completed in 542ms
+765 http fetch GET 200 https://registry.npmjs.org/inherits/-/inherits-2.0.4.tgz 459ms (cache miss)
+766 timing reifyNode:node_modules/newman/node_modules/inherits Completed in 552ms
+767 http fetch GET 200 https://registry.npmjs.org/http-reasons/-/http-reasons-0.1.0.tgz 452ms (cache miss)
+768 timing reifyNode:node_modules/newman/node_modules/http-reasons Completed in 553ms
+769 http fetch GET 200 https://registry.npmjs.org/postman-url-encoder/-/postman-url-encoder-3.0.5.tgz 461ms (cache miss)
+770 http fetch GET 200 https://registry.npmjs.org/mime-db/-/mime-db-1.51.0.tgz 464ms (cache miss)
+771 http fetch GET 200 https://registry.npmjs.org/allure-js-commons/-/allure-js-commons-2.0.0-beta.19.tgz 537ms (cache miss)
+772 http fetch GET 200 https://registry.npmjs.org/object-hash/-/object-hash-1.3.1.tgz 524ms (cache miss)
+773 timing reifyNode:node_modules/newman/node_modules/object-hash Completed in 568ms
+774 timing reifyNode:node_modules/newman/node_modules/postman-url-encoder Completed in 568ms
+775 timing reifyNode:node_modules/newman/node_modules/mime-db Completed in 568ms
+776 http fetch GET 200 https://registry.npmjs.org/file-type/-/file-type-3.9.0.tgz 466ms (cache miss)
+777 timing reifyNode:node_modules/newman/node_modules/file-type Completed in 568ms
+778 http fetch GET 200 https://registry.npmjs.org/mime-format/-/mime-format-2.0.1.tgz 472ms (cache miss)
+779 timing reifyNode:node_modules/newman/node_modules/mime-format Completed in 571ms
+780 timing reifyNode:node_modules/newman-reporter-allure/node_modules/allure-js-commons Completed in 574ms
+781 http fetch GET 200 https://registry.npmjs.org/uuid/-/uuid-3.4.0.tgz 461ms (cache miss)
+782 http fetch GET 200 https://registry.npmjs.org/word-wrap/-/word-wrap-1.2.3.tgz 474ms (cache miss)
+783 timing reifyNode:node_modules/newman/node_modules/word-wrap Completed in 579ms
+784 http fetch GET 200 https://registry.npmjs.org/qs/-/qs-6.5.3.tgz 507ms (cache miss)
+785 http fetch GET 200 https://registry.npmjs.org/liquid-json/-/liquid-json-0.3.1.tgz 484ms (cache miss)
+786 http fetch GET 200 https://registry.npmjs.org/serialised-error/-/serialised-error-1.1.3.tgz 473ms (cache miss)
+787 http fetch GET 200 https://registry.npmjs.org/uuid/-/uuid-3.4.0.tgz 473ms (cache miss)
+788 http fetch GET 200 https://registry.npmjs.org/tough-cookie/-/tough-cookie-2.5.0.tgz 468ms (cache miss)
+789 http fetch GET 200 https://registry.npmjs.org/mkdirp/-/mkdirp-1.0.4.tgz 464ms (cache miss)
+790 timing reifyNode:node_modules/newman/node_modules/serialised-error Completed in 585ms
+791 timing reifyNode:node_modules/newman/node_modules/qs Completed in 588ms
+792 http fetch GET 200 https://registry.npmjs.org/charset/-/charset-1.0.1.tgz 493ms (cache miss)
+793 http fetch GET 200 https://registry.npmjs.org/pretty-ms/-/pretty-ms-7.0.1.tgz 476ms (cache miss)
+794 timing reifyNode:node_modules/newman/node_modules/pretty-ms Completed in 588ms
+795 http fetch GET 200 https://registry.npmjs.org/string-width/-/string-width-4.2.3.tgz 484ms (cache miss)
+796 timing reifyNode:node_modules/newman/node_modules/string-width Completed in 588ms
+797 timing reifyNode:node_modules/newman/node_modules/mkdirp Completed in 588ms
+798 http fetch GET 200 https://registry.npmjs.org/cli-progress/-/cli-progress-3.10.0.tgz 459ms (cache miss)
+799 timing reifyNode:node_modules/newman/node_modules/liquid-json Completed in 591ms
+800 timing reifyNode:node_modules/newman/node_modules/postman-request/node_modules/tough-cookie Completed in 591ms
+801 http fetch GET 200 https://registry.npmjs.org/tough-cookie/-/tough-cookie-3.0.1.tgz 482ms (cache miss)
+802 timing reifyNode:node_modules/newman/node_modules/tough-cookie Completed in 591ms
+803 timing reifyNode:node_modules/newman/node_modules/charset Completed in 594ms
+804 http fetch GET 200 https://registry.npmjs.org/cli-table3/-/cli-table3-0.6.1.tgz 465ms (cache miss)
+805 timing reifyNode:node_modules/newman/node_modules/cli-table3 Completed in 595ms
+806 http fetch GET 200 https://registry.npmjs.org/eventemitter3/-/eventemitter3-4.0.7.tgz 474ms (cache miss)
+807 timing reifyNode:node_modules/newman/node_modules/eventemitter3 Completed in 596ms
+808 http fetch GET 200 https://registry.npmjs.org/colors/-/colors-1.4.0.tgz 473ms (cache miss)
+809 warn deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+810 timing reifyNode:node_modules/newman/node_modules/serialised-error/node_modules/uuid Completed in 598ms
+811 http fetch GET 200 https://registry.npmjs.org/commander/-/commander-8.3.0.tgz 482ms (cache miss)
+812 warn deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+813 timing reifyNode:node_modules/newman/node_modules/postman-request/node_modules/uuid Completed in 600ms
+814 http fetch GET 200 https://registry.npmjs.org/filesize/-/filesize-8.0.7.tgz 479ms (cache miss)
+815 timing reifyNode:node_modules/newman/node_modules/postman-collection-transformer/node_modules/commander Completed in 603ms
+816 http fetch GET 200 https://registry.npmjs.org/commander/-/commander-7.2.0.tgz 480ms (cache miss)
+817 timing reifyNode:node_modules/newman/node_modules/filesize Completed in 604ms
+818 timing reifyNode:node_modules/newman/node_modules/commander Completed in 608ms
+819 http fetch GET 200 https://registry.npmjs.org/bluebird/-/bluebird-2.11.0.tgz 577ms (cache miss)
+820 timing reifyNode:node_modules/newman/node_modules/bluebird Completed in 618ms
+821 timing reifyNode:node_modules/newman/node_modules/cli-progress Completed in 618ms
+822 timing reifyNode:node_modules/newman/node_modules/colors Completed in 619ms
+823 http fetch GET 200 https://registry.npmjs.org/uuid/-/uuid-8.3.2.tgz 593ms (cache miss)
+824 http fetch GET 200 https://registry.npmjs.org/sshpk/-/sshpk-1.17.0.tgz 559ms (cache miss)
+825 timing reifyNode:node_modules/newman-reporter-allure/node_modules/uuid Completed in 626ms
+826 timing reifyNode:node_modules/newman/node_modules/sshpk Completed in 627ms
+827 http fetch GET 200 https://registry.npmjs.org/postman-request/-/postman-request-2.88.1-postman.31.tgz 520ms (cache miss)
+828 timing reifyNode:node_modules/newman/node_modules/postman-request Completed in 634ms
+829 http fetch GET 200 https://registry.npmjs.org/postman-collection-transformer/-/postman-collection-transformer-4.1.6.tgz 520ms (cache miss)
+830 timing reifyNode:node_modules/newman/node_modules/postman-collection-transformer Completed in 640ms
+831 http fetch GET 200 https://registry.npmjs.org/newman/-/newman-5.3.2.tgz 614ms (cache miss)
+832 timing reifyNode:node_modules/newman Completed in 644ms
+833 http fetch GET 200 https://registry.npmjs.org/source-map/-/source-map-0.6.1.tgz 591ms (cache miss)
+834 timing reifyNode:node_modules/newman/node_modules/source-map Completed in 644ms
+835 http fetch GET 200 https://registry.npmjs.org/chardet/-/chardet-1.4.0.tgz 519ms (cache miss)
+836 http fetch GET 200 https://registry.npmjs.org/semver/-/semver-7.3.5.tgz 538ms (cache miss)
+837 http fetch GET 200 https://registry.npmjs.org/uri-js/-/uri-js-4.4.1.tgz 589ms (cache miss)
+838 timing reifyNode:node_modules/newman/node_modules/semver Completed in 652ms
+839 timing reifyNode:node_modules/newman/node_modules/chardet Completed in 652ms
+840 http fetch GET 200 https://registry.npmjs.org/iconv-lite/-/iconv-lite-0.6.3.tgz 553ms (cache miss)
+841 timing reifyNode:node_modules/newman/node_modules/uri-js Completed in 655ms
+842 timing reifyNode:node_modules/newman/node_modules/iconv-lite Completed in 655ms
+843 http fetch GET 200 https://registry.npmjs.org/xmlbuilder/-/xmlbuilder-15.1.1.tgz 553ms (cache miss)
+844 timing reifyNode:node_modules/newman/node_modules/xmlbuilder Completed in 659ms
+845 http fetch GET 200 https://registry.npmjs.org/csv-parse/-/csv-parse-4.16.3.tgz 541ms (cache miss)
+846 http fetch GET 200 https://registry.npmjs.org/uuid/-/uuid-8.3.2.tgz 569ms (cache miss)
+847 timing reifyNode:node_modules/newman/node_modules/csv-parse Completed in 665ms
+848 timing reifyNode:node_modules/newman/node_modules/uuid Completed in 669ms
+849 http fetch GET 200 https://registry.npmjs.org/uglify-js/-/uglify-js-3.17.4.tgz 618ms (cache miss)
+850 timing reifyNode:node_modules/newman/node_modules/uglify-js Completed in 671ms
+851 http fetch GET 200 https://registry.npmjs.org/neo-async/-/neo-async-2.6.2.tgz 633ms (cache miss)
+852 timing reifyNode:node_modules/newman/node_modules/neo-async Completed in 688ms
+853 http fetch GET 200 https://registry.npmjs.org/brotli/-/brotli-1.3.3.tgz 603ms (cache miss)
+854 timing reifyNode:node_modules/newman/node_modules/brotli Completed in 687ms
+855 http fetch GET 200 https://registry.npmjs.org/postman-collection/-/postman-collection-4.1.1.tgz 570ms (cache miss)
+856 timing reifyNode:node_modules/newman/node_modules/postman-collection Completed in 688ms
+857 http fetch GET 200 https://registry.npmjs.org/ajv/-/ajv-6.12.6.tgz 640ms (cache miss)
+858 timing reifyNode:node_modules/newman/node_modules/ajv Completed in 707ms
+859 http fetch GET 200 https://registry.npmjs.org/async/-/async-3.2.3.tgz 602ms (cache miss)
+860 timing reifyNode:node_modules/newman/node_modules/async Completed in 734ms
+861 http fetch GET 200 https://registry.npmjs.org/handlebars/-/handlebars-4.7.7.tgz 728ms (cache miss)
+862 timing reifyNode:node_modules/newman/node_modules/handlebars Completed in 787ms
+863 http fetch GET 200 https://registry.npmjs.org/postman-sandbox/-/postman-sandbox-4.0.6.tgz 737ms (cache miss)
+864 timing reifyNode:node_modules/newman/node_modules/postman-sandbox Completed in 794ms
+865 http fetch GET 200 https://registry.npmjs.org/postman-runtime/-/postman-runtime-7.29.0.tgz 684ms (cache miss)
+866 timing reifyNode:node_modules/newman/node_modules/postman-runtime Completed in 798ms
+867 http fetch GET 200 https://registry.npmjs.org/underscore/-/underscore-1.12.1.tgz 786ms (cache miss)
+868 timing reifyNode:node_modules/newman/node_modules/underscore Completed in 837ms
+869 http fetch GET 200 https://registry.npmjs.org/lodash/-/lodash-4.17.21.tgz 874ms (cache miss)
+870 timing reifyNode:node_modules/newman-reporter-allure/node_modules/lodash Completed in 907ms
+871 http fetch GET 200 https://registry.npmjs.org/lodash/-/lodash-4.17.21.tgz 791ms (cache miss)
+872 timing reifyNode:node_modules/newman/node_modules/lodash Completed in 910ms
+873 http fetch GET 200 https://registry.npmjs.org/@postman/tunnel-agent/-/tunnel-agent-0.6.3.tgz 1107ms (cache miss)
+874 timing reifyNode:node_modules/newman/node_modules/@postman/tunnel-agent Completed in 1195ms
+875 http fetch GET 200 https://registry.npmjs.org/@postman/form-data/-/form-data-3.1.1.tgz 1138ms (cache miss)
+876 timing reifyNode:node_modules/newman/node_modules/@postman/form-data Completed in 1226ms
+877 http fetch GET 200 https://registry.npmjs.org/faker/-/faker-5.5.3.tgz 1186ms (cache miss)
+878 timing reifyNode:node_modules/newman/node_modules/faker Completed in 1290ms
+879 timing reify:unpack Completed in 1292ms
+880 timing reify:unretire Completed in 0ms
+881 timing build:queue Completed in 3ms
+882 timing build:link:node_modules/newman Completed in 2ms
+883 timing build:link:node_modules/newman/node_modules/handlebars Completed in 2ms
+884 timing build:link:node_modules/newman-reporter-allure/node_modules/mkdirp Completed in 2ms
+885 timing build:link:node_modules/newman/node_modules/serialised-error/node_modules/uuid Completed in 1ms
+886 timing build:link:node_modules/newman-reporter-allure/node_modules/uuid Completed in 2ms
+887 timing build:link:node_modules/newman/node_modules/postman-request/node_modules/uuid Completed in 1ms
+888 timing build:link:node_modules/newman/node_modules/mkdirp Completed in 2ms
+889 timing build:link:node_modules/newman/node_modules/postman-collection-transformer Completed in 2ms
+890 timing build:link:node_modules/newman/node_modules/semver Completed in 2ms
+891 timing build:link:node_modules/newman/node_modules/sshpk Completed in 2ms
+892 timing build:link:node_modules/newman/node_modules/uglify-js Completed in 1ms
+893 timing build:link:node_modules/newman/node_modules/uuid Completed in 1ms
+894 timing build:link Completed in 2ms
+895 timing build:deps Completed in 6ms
+896 timing build Completed in 6ms
+897 timing reify:build Completed in 6ms
+898 timing reify:trash Completed in 0ms
+899 timing reify Completed in 10189ms
+900 silly ADD node_modules/newman-reporter-allure
+901 silly ADD node_modules/newman-reporter-allure/node_modules/uuid
+902 silly ADD node_modules/newman-reporter-allure/node_modules/properties
+903 silly ADD node_modules/newman-reporter-allure/node_modules/mkdirp
+904 silly ADD node_modules/newman-reporter-allure/node_modules/lodash
+905 silly ADD node_modules/newman-reporter-allure/node_modules/allure-js-commons
+906 silly ADD node_modules/newman
+907 silly ADD node_modules/newman/node_modules/core-util-is
+908 silly ADD node_modules/newman/node_modules/flatted
+909 silly ADD node_modules/newman/node_modules/psl
+910 silly ADD node_modules/newman/node_modules/ip-regex
+911 silly ADD node_modules/newman/node_modules/ansi-regex
+912 silly ADD node_modules/newman/node_modules/strip-ansi
+913 silly ADD node_modules/newman/node_modules/is-fullwidth-code-point
+914 silly ADD node_modules/newman/node_modules/emoji-regex
+915 silly ADD node_modules/newman/node_modules/bluebird
+916 silly ADD node_modules/newman/node_modules/tweetnacl
+917 silly ADD node_modules/newman/node_modules/jsbn
+918 silly ADD node_modules/newman/node_modules/getpass
+919 silly ADD node_modules/newman/node_modules/ecc-jsbn
+920 silly ADD node_modules/newman/node_modules/dashdash
+921 silly ADD node_modules/newman/node_modules/bcrypt-pbkdf
+922 silly ADD node_modules/newman/node_modules/asn1
+923 silly ADD node_modules/newman/node_modules/stack-trace
+924 silly ADD node_modules/newman/node_modules/object-hash
+925 silly ADD node_modules/newman/node_modules/yallist
+926 silly ADD node_modules/newman/node_modules/lru-cache
+927 silly ADD node_modules/newman/node_modules/parse-ms
+928 silly ADD node_modules/newman/node_modules/punycode
+929 silly ADD node_modules/newman/node_modules/uvm
+930 silly ADD node_modules/newman/node_modules/teleport-javascript
+931 silly ADD node_modules/newman/node_modules/underscore
+932 silly ADD node_modules/newman/node_modules/httpreq
+933 silly ADD node_modules/newman/node_modules/wordwrap
+934 silly ADD node_modules/newman/node_modules/uglify-js
+935 silly ADD node_modules/newman/node_modules/source-map
+936 silly ADD node_modules/newman/node_modules/neo-async
+937 silly ADD node_modules/newman/node_modules/minimist
+938 silly ADD node_modules/newman/node_modules/postman-sandbox
+939 silly ADD node_modules/newman/node_modules/node-oauth1
+940 silly ADD node_modules/newman/node_modules/js-sha512
+941 silly ADD node_modules/newman/node_modules/httpntlm
+942 silly ADD node_modules/newman/node_modules/handlebars
+943 silly ADD node_modules/newman/node_modules/verror
+944 silly ADD node_modules/newman/node_modules/json-schema
+945 silly ADD node_modules/newman/node_modules/extsprintf
+946 silly ADD node_modules/newman/node_modules/sshpk
+947 silly ADD node_modules/newman/node_modules/jsprim
+948 silly ADD node_modules/newman/node_modules/assert-plus
+949 silly ADD node_modules/newman/node_modules/uri-js
+950 silly ADD node_modules/newman/node_modules/json-schema-traverse
+951 silly ADD node_modules/newman/node_modules/fast-json-stable-stringify
+952 silly ADD node_modules/newman/node_modules/fast-deep-equal
+953 silly ADD node_modules/newman/node_modules/har-schema
+954 silly ADD node_modules/newman/node_modules/ajv
+955 silly ADD node_modules/newman/node_modules/delayed-stream
+956 silly ADD node_modules/newman/node_modules/base64-js
+957 silly ADD node_modules/newman/node_modules/asynckit
+958 silly ADD node_modules/newman/node_modules/stream-length
+959 silly ADD node_modules/newman/node_modules/safe-buffer
+960 silly ADD node_modules/newman/node_modules/qs
+961 silly ADD node_modules/newman/node_modules/performance-now
+962 silly ADD node_modules/newman/node_modules/oauth-sign
+963 silly ADD node_modules/newman/node_modules/json-stringify-safe
+964 silly ADD node_modules/newman/node_modules/isstream
+965 silly ADD node_modules/newman/node_modules/is-typedarray
+966 silly ADD node_modules/newman/node_modules/http-signature
+967 silly ADD node_modules/newman/node_modules/har-validator
+968 silly ADD node_modules/newman/node_modules/forever-agent
+969 silly ADD node_modules/newman/node_modules/extend
+970 silly ADD node_modules/newman/node_modules/combined-stream
+971 silly ADD node_modules/newman/node_modules/caseless
+972 silly ADD node_modules/newman/node_modules/brotli
+973 silly ADD node_modules/newman/node_modules/aws4
+974 silly ADD node_modules/newman/node_modules/aws-sign2
+975 silly ADD node_modules/newman/node_modules/@postman/tunnel-agent
+976 silly ADD node_modules/newman/node_modules/@postman/form-data
+977 silly ADD node_modules/newman/node_modules/strip-json-comments
+978 silly ADD node_modules/newman/node_modules/inherits
+979 silly ADD node_modules/newman/node_modules/mime-db
+980 silly ADD node_modules/newman/node_modules/charset
+981 silly ADD node_modules/newman/node_modules/safer-buffer
+982 silly ADD node_modules/newman/node_modules/uuid
+983 silly ADD node_modules/newman/node_modules/postman-url-encoder
+984 silly ADD node_modules/newman/node_modules/mime-types
+985 silly ADD node_modules/newman/node_modules/mime-format
+986 silly ADD node_modules/newman/node_modules/liquid-json
+987 silly ADD node_modules/newman/node_modules/iconv-lite
+988 silly ADD node_modules/newman/node_modules/http-reasons
+989 silly ADD node_modules/newman/node_modules/file-type
+990 silly ADD node_modules/newman/node_modules/faker
+991 silly ADD node_modules/newman/node_modules/string-width
+992 silly ADD node_modules/newman/node_modules/xmlbuilder
+993 silly ADD node_modules/newman/node_modules/word-wrap
+994 silly ADD node_modules/newman/node_modules/tough-cookie
+995 silly ADD node_modules/newman/node_modules/serialised-error
+996 silly ADD node_modules/newman/node_modules/serialised-error/node_modules/uuid
+997 silly ADD node_modules/newman/node_modules/semver
+998 silly ADD node_modules/newman/node_modules/pretty-ms
+999 silly ADD node_modules/newman/node_modules/postman-runtime
+1000 silly ADD node_modules/newman/node_modules/postman-request
+1001 silly ADD node_modules/newman/node_modules/postman-request/node_modules/uuid
+1002 silly ADD node_modules/newman/node_modules/postman-request/node_modules/tough-cookie
+1003 silly ADD node_modules/newman/node_modules/postman-collection-transformer
+1004 silly ADD node_modules/newman/node_modules/postman-collection-transformer/node_modules/commander
+1005 silly ADD node_modules/newman/node_modules/postman-collection
+1006 silly ADD node_modules/newman/node_modules/mkdirp
+1007 silly ADD node_modules/newman/node_modules/lodash
+1008 silly ADD node_modules/newman/node_modules/filesize
+1009 silly ADD node_modules/newman/node_modules/eventemitter3
+1010 silly ADD node_modules/newman/node_modules/csv-parse
+1011 silly ADD node_modules/newman/node_modules/commander
+1012 silly ADD node_modules/newman/node_modules/colors
+1013 silly ADD node_modules/newman/node_modules/cli-table3
+1014 silly ADD node_modules/newman/node_modules/cli-progress
+1015 silly ADD node_modules/newman/node_modules/chardet
+1016 silly ADD node_modules/newman/node_modules/async
+1017 timing command:install Completed in 10192ms
+1018 notice
+1018 notice New major version of npm available! 8.19.3 -> 9.1.1
+1018 notice Changelog: <https://github.com/npm/cli/releases/tag/v9.1.1>
+1018 notice Run `npm install -g npm@9.1.1` to update!
+1018 notice
+1019 verbose exit 0
+1020 timing npm Completed in 10267ms
+1021 info ok

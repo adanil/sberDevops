@@ -1,0 +1,28 @@
+version: "3.9"
+
+services:
+  jenkins:
+    image: jenkins/jenkins:lts
+    ports:
+      - "8080:8080"
+      - "50000:50000"
+    volumes:
+      - ./jenkins_home:/var/jenkins_home
+      -  /var/run/docker.sock:/var/run/docker.sock
+    networks:
+      - main
+
+  sonarqube:
+    image: sonarqube:latest
+    ports:
+      - "9000:9000"
+    environment:
+      - SONARQUBE_HOME=/sonarqube-data
+    volumes:
+      -  ./PERSISTENT_DISK/sonarqubeVolume:/sonarqube-data
+    networks:
+      - main
+
+networks:
+  main:
+    driver: bridge

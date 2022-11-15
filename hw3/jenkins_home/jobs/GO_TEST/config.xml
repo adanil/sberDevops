@@ -1,0 +1,110 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@1254.v3f64639b_11dd">
+  <actions>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobAction plugin="pipeline-model-definition@2.2118.v31fd5b_9944b_5"/>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction plugin="pipeline-model-definition@2.2118.v31fd5b_9944b_5">
+      <jobProperties/>
+      <triggers/>
+      <parameters/>
+      <options/>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
+  </actions>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
+      <triggers>
+        <hudson.triggers.TimerTrigger>
+          <spec>H * * * *
+</spec>
+        </hudson.triggers.TimerTrigger>
+      </triggers>
+    </org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@3536.vb_8a_6628079d5">
+    <script>pipeline {
+    agent any
+
+    tools {
+       go &apos;go1.18&apos;
+       nodejs &apos;nodejs&apos;
+       allure &apos;allure2.20&apos;
+       dockerTool &apos;docker&apos;
+    }
+
+    stages {
+        stage(&apos;GIT CLONE&apos;) {
+            steps{
+                git branch: &apos;hw3&apos;,
+                url: &apos;https://github.com/adanil/sberDevops.git&apos;
+            }
+        }
+        stage(&apos;Build&apos;) {
+            steps {
+                dir(&apos;hw3&apos;) {
+                  sh &apos;ls&apos;
+                  sh &apos;go build -o simpleServer main.go&apos;
+                }
+
+            }
+        }
+        stage(&apos;Run tests&apos;) {
+            steps {
+                dir(&apos;hw3&apos;) {
+                  sh &apos;ls&apos;
+                  sh &apos;./simpleServer &amp;&apos;
+                }
+                dir(&apos;hw3/tests&apos;) {
+                  sh &apos;ls&apos;
+                  sh &apos;sleep 1s&apos;
+                  sh &apos;newman run hw3_tests.json -r allure&apos;
+                  sh &apos;ls&apos;
+                }
+
+            }
+        }
+        stage(&apos;Generate allure report&apos;) {
+            steps {
+                script{
+                           allure([
+                          	   includeProperties: false,
+                          	   jdk: &apos;&apos;,
+                          	   properties: [],
+                          	   reportBuildPolicy: &apos;ALWAYS&apos;,
+                          	   results: [[path: &apos;hw3/tests/allure-results&apos;]]
+                    	   ])
+                }
+            }
+        }
+        stage(&apos;Sonar analyse&apos;) {
+            environment {
+              SCANNER_HOME = tool &apos;sonar-scanner&apos;
+            }
+            steps {
+            withSonarQubeEnv(credentialsId: &apos;sq_id&apos;, installationName: &apos;sq&apos;) {
+                 sh &apos;&apos;&apos;$SCANNER_HOME/bin/sonar-scanner \
+                 -Dsonar.projectKey=SBERhw3 \
+                 -Dsonar.projectName=goserver \
+                 -Dsonar.sources=hw3/main.go,hw3/server/server.go&apos;&apos;&apos;
+               }
+             }
+        }
+        stage(&apos;Build docker image&apos;) {
+            steps {
+                dir(&apos;hw3&apos;) {
+                  sh &apos;ls&apos;
+                  script{
+                    docker.build(&quot;hw3/server_image&quot;)
+                  }
+                }
+
+            }
+        }
+    }
+}
+</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>
