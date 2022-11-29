@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: server-deployment
+  labels:
+    app: server
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: server
+  template:
+    metadata:
+      name: server
+      labels:
+        app: server
+    spec:
+      containers:
+      - name: goserver
+        image: adanil/hw4:1.1
+        ports:
+        - containerPort: 9091
+        env:
+        - name: DBADDR
+          value: mongodb://admin:admin@mongos:27017
