@@ -1,0 +1,55 @@
+pipeline {
+    agent any
+    
+    tools {
+        go 'go1.18'
+        nodejs 'njs'
+    }
+
+    stages {
+        stage('GIT') {
+            steps {
+                git branch: 'main', url: 'https://github.com/adanil/devopshw5.git'
+                sh 'ls'
+            }
+        }
+        stage("Build"){
+            steps {
+                sh 'go build -o simpleServer *.go'
+            }
+        }
+        stage("Build docker image"){
+            steps{
+                sh 'docker build -t adanil/hw5:dev .'
+                sh 'docker images'
+            }
+        }
+        stage("Pull image to dockerhub"){
+            steps{
+                script{
+                    withCredentials([string(credentialsId: 'dockerpass',variable: 'dockerpassword')]){
+                        sh 'docker login -u adanil -p ${dockerpassword}'
+                        sh 'docker push adanil/hw5:dev'
+                    }
+                }
+            }
+        }
+        stage("Deploy to dev k8s") {
+            steps{
+                script{
+                    kubernetesDeploy (configs: 'project/mongodb_deployment.yml', kubeconfigId: 'kubeconfig')
+                    kubernetesDeploy (configs: 'project/mongodb_service.yml', kubeconfigId: 'kubeconfig')
+                    kubernetesDeploy (configs: 'project/mongoexpress_deployment.yml', kubeconfigId: 'kubeconfig')
+                    kubernetesDeploy (configs: 'project/mongoexpress_service.yml', kubeconfigId: 'kubeconfig')
+                    kubernetesDeploy (configs: 'project/server_service.yml', kubeconfigId: 'kubeconfig')
+                    kubernetesDeploy (configs: 'project/server_deployment.yml', kubeconfigId: 'kubeconfig')
+                }
+            }
+        }
+        stage("Postman tests"){
+            steps{
+                sh 'newman run tests/hw5_tests.json'
+            }
+        }
+    }
+}
